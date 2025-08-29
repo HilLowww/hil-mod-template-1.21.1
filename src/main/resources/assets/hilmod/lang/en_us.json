@@ -5,6 +5,9 @@
   "block.hilmod.crystalite_block": "Block of Crystalite",
   "block.hilmod.raw_crystalite_block": "Block of Raw Crystalite",
 
+  "block.hilmod.crystalite_ore": "Crystalite Ore",
+  "block.hilmod.crystalite_deepslate_ore": "Crystalite Deepslate Ore",
+
   "itemgroup.hilmod.crystalite_items_group": "Crystalite Items",
   "itemgroup.hilmod.crystalite_blocks_group": "Crystalite Blocks"
 }

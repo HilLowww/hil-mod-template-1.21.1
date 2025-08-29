@@ -27,6 +27,9 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.CRYSTALITE_BLOCK);
                         entries.add(ModBlocks.RAW_CRYSTALITE_BLOCK);
+
+                        entries.add(ModBlocks.CRYSTALITE_ORE);
+                        entries.add(ModBlocks.CRYSTALITE_DEEPSLATE_ORE);
                     }).build());
 
     public static void registerItemGroups() {
