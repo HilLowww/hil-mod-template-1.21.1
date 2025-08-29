@@ -2,6 +2,9 @@ package net.hil.hilmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.hil.hilmod.block.ModBlocks;
+import net.hil.hilmod.item.ModItemGroups;
+import net.hil.hilmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 // LLLLLLL
@@ -11,6 +14,9 @@ public class HilMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        ModItemGroups.registerItemGroups();
 
+        ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 	}
 }
