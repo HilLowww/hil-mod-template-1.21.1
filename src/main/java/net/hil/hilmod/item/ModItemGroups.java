@@ -18,6 +18,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_CRYSTALITE);
                         entries.add(ModItems.CRYSTALITE);
+
+                        entries.add(ModItems.CHISEL);
                     }).build());
 
     public static final ItemGroup CRYSTELITE_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
