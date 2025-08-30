@@ -26,6 +26,7 @@ public class ModBlocks {
     public static final Block CRYSTALITE_ORE = registerBlock("crystalite_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(3f).requiresTool()));
+
     public static final Block CRYSTALITE_DEEPSLATE_ORE = registerBlock("crystalite_deepslate_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
                     AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
