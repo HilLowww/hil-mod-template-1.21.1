@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hilmod:block/crystalite_slab"
+    },
+    "type=double": {
+      "model": "hilmod:block/crystalite_block"
+    },
+    "type=top": {
+      "model": "hilmod:block/crystalite_slab_top"
+    }
+  }
+}

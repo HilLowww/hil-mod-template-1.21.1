@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "hilmod:block/crystalite_block",
+    "side": "hilmod:block/crystalite_block",
+    "top": "hilmod:block/crystalite_block"
+  }
+}
