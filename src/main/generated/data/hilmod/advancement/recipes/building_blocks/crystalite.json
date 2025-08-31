@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crystalite_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "hilmod:crystalite_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hilmod:crystalite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crystalite_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hilmod:crystalite"
+    ]
+  }
+}

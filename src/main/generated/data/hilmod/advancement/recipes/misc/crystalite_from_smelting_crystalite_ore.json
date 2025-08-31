@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crystalite_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "hilmod:crystalite_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hilmod:crystalite_from_smelting_crystalite_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crystalite_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hilmod:crystalite_from_smelting_crystalite_ore"
+    ]
+  }
+}

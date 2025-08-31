@@ -1,0 +1,6 @@
+// 1.21.1	2025-08-31T08:53:42.4705191	Hil Mod/Block Loot Tables
+de112a5fbe4766a34cc8ded5ac626e0c7ba9340a data\hilmod\loot_table\blocks\crystalite_block.json
+c4e74ac190c8622c783aa3ed9cf2f6deacde2f2f data\hilmod\loot_table\blocks\crystalite_deepslate_ore.json
+659c26e6361be20e958e7fe04d892511ff1d6d0d data\hilmod\loot_table\blocks\crystalite_ore.json
+7c0023f93e11cf13c3f67e8ffc3fc9332adb67e2 data\hilmod\loot_table\blocks\raw_crystalite_block.json
+c3548390be014283ea27591af0df88a1a595974a data\hilmod\loot_table\blocks\magic_block.json

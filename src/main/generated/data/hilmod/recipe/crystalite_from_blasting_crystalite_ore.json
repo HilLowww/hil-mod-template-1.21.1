@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "crystalite",
+  "ingredient": {
+    "item": "hilmod:crystalite_ore"
+  },
+  "result": {
+    "id": "hilmod:crystalite"
+  }
+}
