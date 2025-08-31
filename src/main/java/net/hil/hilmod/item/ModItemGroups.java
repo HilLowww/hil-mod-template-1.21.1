@@ -34,6 +34,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRYSTALITE_BLOCK);
                         entries.add(ModBlocks.RAW_CRYSTALITE_BLOCK);
 
+                        entries.add(ModBlocks.CRYSTALITE_DOOR);
+                        entries.add(ModBlocks.CRYSTALITE_FENCE);
+                        entries.add(ModBlocks.CRYSTALITE_BUTTON);
+                        entries.add(ModBlocks.CRYSTALITE_FENCE_GATE);
+                        entries.add(ModBlocks.CRYSTALITE_PRESSURE_PLATE);
+                        entries.add(ModBlocks.CRYSTALITE_SLAB);
+                        entries.add(ModBlocks.CRYSTALITE_STAIRS);
+                        entries.add(ModBlocks.CRYSTALITE_TRAPDOOR);
+                        entries.add(ModBlocks.CRYSTALITE_WALL);
+
                         entries.add(ModBlocks.CRYSTALITE_ORE);
                         entries.add(ModBlocks.CRYSTALITE_DEEPSLATE_ORE);
 

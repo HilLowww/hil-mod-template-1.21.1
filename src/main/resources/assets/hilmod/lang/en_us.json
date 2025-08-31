@@ -8,6 +8,19 @@
   "block.hilmod.crystalite_block": "Block of Crystalite",
   "block.hilmod.raw_crystalite_block": "Block of Raw Crystalite",
 
+  "block.hilmod.crystalite_stairs": "Crystalite Stairs",
+  "block.hilmod.crystalite_slab": "Crystalite Slab",
+
+  "block.hilmod.crystalite_button": "Crystalite Button",
+  "block.hilmod.crystalite_pressure_plate": "Crystalite Pressure Plate",
+
+  "block.hilmod.crystalite_fence": "Crystalite Fence",
+  "block.hilmod.crystalite_fence_gate": "Crystalite Fence Gate",
+  "block.hilmod.crystalite_wall": "Crystalite Wall",
+
+  "block.hilmod.crystalite_door": "Crystalite door",
+  "block.hilmod.crystalite_trapdoor": "Crystalite Trapdoor",
+
   "block.hilmod.magic_block": "Magic Block",
 
   "block.hilmod.crystalite_ore": "Crystalite Ore",

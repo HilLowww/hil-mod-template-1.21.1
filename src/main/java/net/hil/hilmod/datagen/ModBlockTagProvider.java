@@ -24,5 +24,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.CRYSTALITE_DEEPSLATE_ORE);
+
+        getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.CRYSTALITE_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.CRYSTALITE_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.CRYSTALITE_WALL);
     }
 }

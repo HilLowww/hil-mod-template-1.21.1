@@ -32,6 +32,19 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.CRYSTALITE_ORE, oreDrops(ModBlocks.CRYSTALITE_ORE, ModItems.RAW_CRYSTALITE));
         addDrop(ModBlocks.CRYSTALITE_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.CRYSTALITE_DEEPSLATE_ORE, ModItems.RAW_CRYSTALITE, 3, 7));
+
+        addDrop(ModBlocks.CRYSTALITE_STAIRS);
+        addDrop(ModBlocks.CRYSTALITE_SLAB, slabDrops(ModBlocks.CRYSTALITE_SLAB));
+
+        addDrop(ModBlocks.CRYSTALITE_BUTTON);
+        addDrop(ModBlocks.CRYSTALITE_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.CRYSTALITE_WALL);
+        addDrop(ModBlocks.CRYSTALITE_FENCE);
+        addDrop(ModBlocks.CRYSTALITE_FENCE_GATE);
+
+        addDrop(ModBlocks.CRYSTALITE_DOOR, doorDrops(ModBlocks.CRYSTALITE_DOOR));
+        addDrop(ModBlocks.CRYSTALITE_TRAPDOOR);
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

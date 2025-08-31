@@ -3,9 +3,7 @@ package net.hil.hilmod.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hil.hilmod.HilMod;
 import net.hil.hilmod.block.custom.MagicBlock;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -34,6 +32,30 @@ public class ModBlocks {
 
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
             new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+
+    public static final Block CRYSTALITE_STAIRS = registerBlock("crystalite_stairs",
+            new StairsBlock(ModBlocks.CRYSTALITE_BLOCK.getDefaultState(),
+            AbstractBlock.Settings.create().strength(2f).requiresTool()));
+        public static final Block CRYSTALITE_SLAB = registerBlock("crystalite_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+        public static final Block CRYSTALITE_BUTTON = registerBlock("crystalite_button",
+            new ButtonBlock(BlockSetType.IRON,2, AbstractBlock.Settings.create().strength(2f).requiresTool().noCollision()));
+        public static final Block CRYSTALITE_PRESSURE_PLATE = registerBlock("crystalite_pressure_plate",
+            new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+        public static final Block CRYSTALITE_FENCE = registerBlock("crystalite_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+        public static final Block CRYSTALITE_FENCE_GATE = registerBlock("crystalite_fence_gate",
+            new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.create().strength(2f).requiresTool()));
+        public static final Block CRYSTALITE_WALL = registerBlock("crystalite_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+        public static final Block CRYSTALITE_DOOR = registerBlock("crystalite_door",
+            new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
+        public static final Block CRYSTALITE_TRAPDOOR = registerBlock("crystalite_trapdoor",
+            new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
+
 
     public static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

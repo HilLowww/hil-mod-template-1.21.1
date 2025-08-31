@@ -1,6 +1,15 @@
-// 1.21.1	2025-08-31T08:53:42.4705191	Hil Mod/Block Loot Tables
+// 1.21.1	2025-08-31T13:50:00.8021974	Hil Mod/Block Loot Tables
+0fc9ef8fa42c9f228665bb1464e8888b5421b545 data\hilmod\loot_table\blocks\crystalite_trapdoor.json
 de112a5fbe4766a34cc8ded5ac626e0c7ba9340a data\hilmod\loot_table\blocks\crystalite_block.json
+40cd6ae0eae776a5316151b699ecb0fb5677297a data\hilmod\loot_table\blocks\crystalite_slab.json
 c4e74ac190c8622c783aa3ed9cf2f6deacde2f2f data\hilmod\loot_table\blocks\crystalite_deepslate_ore.json
-659c26e6361be20e958e7fe04d892511ff1d6d0d data\hilmod\loot_table\blocks\crystalite_ore.json
+befdaf201a414ddcd4fe3b05c40fab13baf81de6 data\hilmod\loot_table\blocks\crystalite_fence_gate.json
+d739c66b801bc30b6bb6e533bcc5efbc4554d53c data\hilmod\loot_table\blocks\crystalite_stairs.json
 7c0023f93e11cf13c3f67e8ffc3fc9332adb67e2 data\hilmod\loot_table\blocks\raw_crystalite_block.json
+659c26e6361be20e958e7fe04d892511ff1d6d0d data\hilmod\loot_table\blocks\crystalite_ore.json
+dd2793e14f0dd528487fed9936922e82e69fc4ea data\hilmod\loot_table\blocks\crystalite_fence.json
+a61ee3717988bf01f1a0c98ac81f3ec8b7ffa5eb data\hilmod\loot_table\blocks\crystalite_button.json
+3412568b2c313de1e4fcaaa308d91a2363c3ef65 data\hilmod\loot_table\blocks\crystalite_wall.json
+e483f57eae544c12545428acef1c57b4bf72a39e data\hilmod\loot_table\blocks\crystalite_door.json
+099f464f72800e6483b937ffba195ba1d413ce34 data\hilmod\loot_table\blocks\crystalite_pressure_plate.json
 c3548390be014283ea27591af0df88a1a595974a data\hilmod\loot_table\blocks\magic_block.json
