@@ -1,10 +1,12 @@
 {
   "item.hilmod.crystalite": "Crystalite",
   "item.hilmod.raw_crystalite": "Raw Crystalite",
-  "item.himod.chisel": "Chisel",
+  "item.hilmod.chisel": "Chisel",
 
   "block.hilmod.crystalite_block": "Block of Crystalite",
   "block.hilmod.raw_crystalite_block": "Block of Raw Crystalite",
+
+  "block.hilmod.magic_block": "Magic Block",
 
   "block.hilmod.crystalite_ore": "Crystalite Ore",
   "block.hilmod.crystalite_deepslate_ore": "Crystalite Deepslate Ore",
