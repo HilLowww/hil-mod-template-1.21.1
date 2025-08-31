@@ -2,6 +2,7 @@ package net.hil.hilmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.hil.hilmod.block.ModBlocks;
 import net.hil.hilmod.item.ModItemGroups;
 import net.hil.hilmod.item.ModItems;
@@ -18,5 +19,7 @@ public class HilMod implements ModInitializer {
 
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+        ModFuels.registerModFuels();
+
 	}
 }
