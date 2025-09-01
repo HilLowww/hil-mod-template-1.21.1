@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.hil.hilmod.block.ModBlocks;
+import net.hil.hilmod.component.ModDataComponentTypes;
 import net.hil.hilmod.item.ModItemGroups;
 import net.hil.hilmod.item.ModItems;
 import org.slf4j.Logger;
@@ -20,6 +21,7 @@ public class HilMod implements ModInitializer {
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
         ModFuels.registerModFuels();
+        ModDataComponentTypes.registerDataComponentTypes();
 
 	}
 }
