@@ -48,6 +48,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRYSTALITE_DEEPSLATE_ORE);
 
                         entries.add(ModBlocks.MAGIC_BLOCK);
+                        entries.add(ModBlocks.CRYSTALITE_LAMP);
                     }).build());
 
     public static void registerItemGroups() {

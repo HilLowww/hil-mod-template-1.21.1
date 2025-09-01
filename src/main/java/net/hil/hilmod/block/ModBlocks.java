@@ -2,6 +2,7 @@ package net.hil.hilmod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hil.hilmod.HilMod;
+import net.hil.hilmod.block.custom.CrystaliteLampBlock;
 import net.hil.hilmod.block.custom.MagicBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -55,6 +56,10 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
         public static final Block CRYSTALITE_TRAPDOOR = registerBlock("crystalite_trapdoor",
             new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
+
+        public static final Block CRYSTALITE_LAMP = registerBlock("crystalite_lamp",
+                new CrystaliteLampBlock(AbstractBlock.Settings.create()
+                        .strength(1f).requiresTool().luminance(state ->state.get(CrystaliteLampBlock.CLICKED) ? 15 : 0)));
 
 
     public static Block registerBlock(String name, Block block) {

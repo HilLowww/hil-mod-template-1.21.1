@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "hilmod:block/crystalite_lamp"
+    },
+    "clicked=true": {
+      "model": "hilmod:block/crystalite_lamp_on"
+    }
+  }
+}
