@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-31T18:17:59.7550169	Hil Mod/Model Definitions
+// 1.21.1	2025-09-03T16:49:13.7477444	Hil Mod/Model Definitions
 5450e10b457284ebee4fb6ed125440c2a06ba79d assets\hilmod\models\block\raw_crystalite_block.json
 8f13ad3256f83af37ba7461d095cde90094045c8 assets\hilmod\models\block\crystalite_fence_inventory.json
 6828e8d72c924c745e17b616454131f91f612015 assets\hilmod\models\block\crystalite_wall_post.json
@@ -20,6 +20,7 @@ a5c513e30bc50315e0e7c4f1204faf566e405871 assets\hilmod\blockstates\crystalite_do
 ec17bbbd6764440b7e0ed40979300b969fcb57dc assets\hilmod\models\block\crystalite_block.json
 78c3c84fb7f946eb540416ffa819a5fc044fc232 assets\hilmod\models\block\crystalite_door_top_right_open.json
 ab5e7664cbaacfbd2ba87e9960ad68ae2fd1f950 assets\hilmod\models\item\crystalite_fence_gate.json
+e6bba830465cfa19d965bd1c680be595bcf37bf7 assets\hilmod\models\item\crystalite_hoe.json
 c4dbfe9f5c7c6acfd5607906fea7a56aea01d515 assets\hilmod\blockstates\crystalite_stairs.json
 5e3ed3c8f8f15d1dd49e47423b760fd56918255c assets\hilmod\models\block\crystalite_fence_gate_wall_open.json
 8b2167bbf16507c1380f25ad54adf18c4bebcad9 assets\hilmod\blockstates\crystalite_block.json
@@ -32,8 +33,8 @@ ebd844ef44b91f8e2c02cb6dac53bb5795e5038f assets\hilmod\blockstates\crystalite_sl
 c40152b648b337ba2685f2e523ac3790b816db97 assets\hilmod\models\block\crystalite_slab_top.json
 4acf5be1847bc3c5fc3c24eddbc16beb1b531c8f assets\hilmod\blockstates\crystalite_pressure_plate.json
 66403902599d4fef73d2f44016de71e6ceb15823 assets\hilmod\blockstates\crystalite_fence_gate.json
-440c303ab4e141f676022b2987955da8e861cd9f assets\hilmod\models\block\crystalite_ore.json
 7e01ab77e004afd1a69fe79258b0bcdf68c23273 assets\hilmod\models\block\crystalite_lamp_on.json
+440c303ab4e141f676022b2987955da8e861cd9f assets\hilmod\models\block\crystalite_ore.json
 173599746f7cbf63de8187b1e63b29b13061322a assets\hilmod\models\block\crystalite_pressure_plate_down.json
 e8e844cac8a157f9066b43a7ce6dc86f417f2937 assets\hilmod\models\item\crystalite_wall.json
 06b3a86feaec80f2756acaf491bbd78d85a8b28c assets\hilmod\models\item\chisel.json
@@ -50,6 +51,7 @@ b637812d000a85f64271d5d10a803a99879508ed assets\hilmod\models\item\crystalite_sl
 8a2efa58f3ec3a0e0ac6b97e47db2932eb34d134 assets\hilmod\models\block\crystalite_wall_side.json
 08157d7f1604ea715723275d47716198a4cb1f51 assets\hilmod\models\block\crystalite_door_top_left_open.json
 a0d028e59401977eed184b0a372e9318241210ba assets\hilmod\models\block\crystalite_fence_gate_wall.json
+71ca1a92e6224ba10ac0f47529bd89da7c0118b2 assets\hilmod\models\item\crystalite_sword.json
 1738f4f5f307ca1a4818e0837d18a755fdba20ef assets\hilmod\models\block\crystalite_door_top_left.json
 02d8805d2a4fe60275bb285a207509a457781566 assets\hilmod\models\block\crystalite_deepslate_ore.json
 6438240e449f665c76b4a1b6cc1b6b9cdd05cebf assets\hilmod\blockstates\crystalite_trapdoor.json
@@ -58,10 +60,13 @@ a38b0ee6ed6486a58d6064a12b69ab8ece6be56a assets\hilmod\models\block\crystalite_t
 945eb5ed653bca41393348a656f2804fd90f16c3 assets\hilmod\models\block\crystalite_fence_post.json
 329de6258b0c936bba9dc54b52f060c18572c7fe assets\hilmod\models\item\crystalite_trapdoor.json
 243a486cd330cd8fdb513049d2742c4f1537249a assets\hilmod\models\block\magic_block.json
+7140d6a873c91cdfe87215f156d69f38e92c4a54 assets\hilmod\models\item\crystalite_pickaxe.json
 859b5210a390007bbda0be4eb267f4319432694b assets\hilmod\models\item\crystalite_pressure_plate.json
 41f5c9d69b9adeb8bb922252a276c7fa14c9128a assets\hilmod\blockstates\crystalite_wall.json
 fee7336753e85e7bfcd1f348bac9e76d4665ee28 assets\hilmod\models\item\ender_rod.json
 046a9ddb1a262038288e8848eee937a1e606688e assets\hilmod\models\item\crystalite_ore.json
+145e585cc58862743c1fab000c6ca2580075137d assets\hilmod\models\item\crystalite_axe.json
+611ee2d0a549002737160b1f51d23508f0826244 assets\hilmod\models\item\crystalite_shovel.json
 dcaf33823bcffdd54ce0a77115443ddf2be64e3c assets\hilmod\models\block\crystalite_slab.json
 9fac43bee4371898a8115d95a791b98a8ba0ef59 assets\hilmod\models\block\crystalite_wall_inventory.json
 06349b00b02f90822c03b453698ef8ee5395c83a assets\hilmod\models\block\crystalite_trapdoor_top.json

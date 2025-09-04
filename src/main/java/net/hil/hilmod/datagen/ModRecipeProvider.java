@@ -7,6 +7,7 @@ import net.hil.hilmod.item.ModItems;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -29,5 +30,45 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.CRYSTALITE, RecipeCategory.DECORATIONS, ModBlocks.CRYSTALITE_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_CRYSTALITE, RecipeCategory.DECORATIONS, ModBlocks.RAW_CRYSTALITE_BLOCK);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CRYSTALITE_SWORD)
+                .pattern(" C ")
+                .pattern(" C ")
+                .pattern(" S ")
+                .input('C', ModItems.CRYSTALITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.CRYSTALITE), conditionsFromItem(ModItems.CRYSTALITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CRYSTALITE_PICKAXE)
+                .pattern("CCC")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('C', ModItems.CRYSTALITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.CRYSTALITE), conditionsFromItem(ModItems.CRYSTALITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CRYSTALITE_SHOVEL)
+                .pattern(" C ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('C', ModItems.CRYSTALITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.CRYSTALITE), conditionsFromItem(ModItems.CRYSTALITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CRYSTALITE_AXE)
+                .pattern("CC ")
+                .pattern("CS ")
+                .pattern(" S ")
+                .input('C', ModItems.CRYSTALITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.CRYSTALITE), conditionsFromItem(ModItems.CRYSTALITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CRYSTALITE_HOE)
+                .pattern("CC ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('C', ModItems.CRYSTALITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.CRYSTALITE), conditionsFromItem(ModItems.CRYSTALITE))
+                .offerTo(recipeExporter);
     }
 }

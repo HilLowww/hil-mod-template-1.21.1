@@ -49,5 +49,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDER_ROD, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.CRYSTALITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CRYSTALITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CRYSTALITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CRYSTALITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CRYSTALITE_HOE, Models.HANDHELD);
     }
 }

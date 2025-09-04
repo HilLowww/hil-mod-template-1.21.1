@@ -9,7 +9,8 @@ import net.minecraft.util.Identifier;
 
 public class ModTags {
     public static class Blocks {
-
+        public static final TagKey<Block> NEEDS_CRYSTALITE_TOOLS = createTag("needs_crystalite_tools");
+        public static final TagKey<Block> INCORECT_FOR_CRYSTALITE_TOOL = createTag("incorect_for_crystalite_tool");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(HilMod.MOD_ID, name));

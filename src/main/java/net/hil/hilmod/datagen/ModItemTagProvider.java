@@ -6,6 +6,7 @@ import net.hil.hilmod.item.ModItems;
 import net.hil.hilmod.util.ModTags;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -20,5 +21,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
                 .add(ModItems.CRYSTALITE)
                 .add(Items.STICK);
+
+        getOrCreateTagBuilder(ItemTags.SWORDS).add(ModItems.CRYSTALITE_SWORD);
+        getOrCreateTagBuilder(ItemTags.PICKAXES).add(ModItems.CRYSTALITE_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.SHOVELS).add(ModItems.CRYSTALITE_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.AXES).add(ModItems.CRYSTALITE_AXE);
+        getOrCreateTagBuilder(ItemTags.HOES).add(ModItems.CRYSTALITE_HOE);
     }
 }

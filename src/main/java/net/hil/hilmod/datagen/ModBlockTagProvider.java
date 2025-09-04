@@ -3,6 +3,7 @@ package net.hil.hilmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.hil.hilmod.block.ModBlocks;
+import net.hil.hilmod.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -28,5 +29,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.CRYSTALITE_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.CRYSTALITE_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.CRYSTALITE_WALL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_CRYSTALITE_TOOLS)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
     }
 }
