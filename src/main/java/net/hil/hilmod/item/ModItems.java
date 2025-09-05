@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hil.hilmod.HilMod;
 import net.hil.hilmod.item.custom.ChiselItem;
 import net.hil.hilmod.item.custom.HammerItem;
+import net.hil.hilmod.item.custom.ModArmorItem;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -55,7 +56,7 @@ public class ModItems {
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.CRYSTALITE, 7, -3.4f))));
 
     public static final Item CRYSTALITE_HELMET = registerItem("crystalite_helmet",
-            new ArmorItem(ModArmorMaterials.CRYSTALITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+            new ModArmorItem(ModArmorMaterials.CRYSTALITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
     public static final Item CRYSTALITE_CHESTPLATE = registerItem("crystalite_chestplate",
             new ArmorItem(ModArmorMaterials.CRYSTALITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
