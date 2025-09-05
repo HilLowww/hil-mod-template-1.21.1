@@ -27,5 +27,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.SHOVELS).add(ModItems.CRYSTALITE_SHOVEL);
         getOrCreateTagBuilder(ItemTags.AXES).add(ModItems.CRYSTALITE_AXE);
         getOrCreateTagBuilder(ItemTags.HOES).add(ModItems.CRYSTALITE_HOE);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.CRYSTALITE_HELMET)
+                .add(ModItems.CRYSTALITE_CHESTPLATE)
+                .add(ModItems.CRYSTALITE_LEGGINGS)
+                .add(ModItems.CRYSTALITE_BOOTS);
     }
 }

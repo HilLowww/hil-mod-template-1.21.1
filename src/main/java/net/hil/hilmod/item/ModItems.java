@@ -49,9 +49,23 @@ public class ModItems {
     public static final Item CRYSTALITE_HOE = registerItem("crystalite_hoe",
             new HoeItem(ModToolMaterials.CRYSTALITE, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.CRYSTALITE, 0, -3f))));
+
     public static final Item CRYSALITE_HAMMER = registerItem("crystalite_hammer",
             new HammerItem(ModToolMaterials.CRYSTALITE, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.CRYSTALITE, 7, -3.4f))));
+
+    public static final Item CRYSTALITE_HELMET = registerItem("crystalite_helmet",
+            new ArmorItem(ModArmorMaterials.CRYSTALITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+    public static final Item CRYSTALITE_CHESTPLATE = registerItem("crystalite_chestplate",
+            new ArmorItem(ModArmorMaterials.CRYSTALITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+    public static final Item CRYSTALITE_LEGGINGS = registerItem("crystalite_leggings",
+            new ArmorItem(ModArmorMaterials.CRYSTALITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+    public static final Item CRYSTALITE_BOOTS = registerItem("crystalite_boots",
+            new ArmorItem(ModArmorMaterials.CRYSTALITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(HilMod.MOD_ID, name), item);

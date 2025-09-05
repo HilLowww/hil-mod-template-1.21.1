@@ -10,7 +10,13 @@
   "item.hilmod.crystalite_shovel": "Crystalite Shovel",
   "item.hilmod.crystalite_axe": "Crystalite Axe",
   "item.hilmod.crystalite_hoe": "Crystalite Hoe",
+
   "item.hilmod.crystalite_hammer": "Crystalite Hammer",
+
+  "item.hilmod.crystalite_helmet": "Crystalite Helmet",
+  "item.hilmod.crystalite_chestplate": "Crystalite Chestplate",
+  "item.hilmod.crystalite_leggings": "Crystalite Leggings",
+  "item.hilmod.crystalite_boots": "Crystalite Boots",
 
 
   "block.hilmod.crystalite_block": "Block of Crystalite",

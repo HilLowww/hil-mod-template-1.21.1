@@ -6,6 +6,7 @@ import net.hil.hilmod.block.ModBlocks;
 import net.hil.hilmod.block.custom.CrystaliteLampBlock;
 import net.hil.hilmod.item.ModItems;
 import net.minecraft.data.client.*;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -56,5 +57,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CRYSTALITE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CRYSTALITE_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CRYSALITE_HAMMER, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CRYSTALITE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CRYSTALITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CRYSTALITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CRYSTALITE_BOOTS));
     }
 }
