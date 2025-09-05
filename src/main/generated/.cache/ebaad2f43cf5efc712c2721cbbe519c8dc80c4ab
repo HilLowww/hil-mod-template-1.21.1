@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-03T16:49:13.7477444	Hil Mod/Model Definitions
+// 1.21.1	2025-09-04T18:13:13.2856127	Hil Mod/Model Definitions
 5450e10b457284ebee4fb6ed125440c2a06ba79d assets\hilmod\models\block\raw_crystalite_block.json
 8f13ad3256f83af37ba7461d095cde90094045c8 assets\hilmod\models\block\crystalite_fence_inventory.json
 6828e8d72c924c745e17b616454131f91f612015 assets\hilmod\models\block\crystalite_wall_post.json
@@ -26,6 +26,7 @@ c4dbfe9f5c7c6acfd5607906fea7a56aea01d515 assets\hilmod\blockstates\crystalite_st
 8b2167bbf16507c1380f25ad54adf18c4bebcad9 assets\hilmod\blockstates\crystalite_block.json
 3e77066b63dbfc600e731434ac78166c861f7ded assets\hilmod\models\block\crystalite_lamp.json
 f227df8bb41555d2a8163f546b0da964a2fd1cdb assets\hilmod\blockstates\crystalite_fence.json
+9a2ca25c603762c50fb82a6e2de21c93843893d0 assets\hilmod\models\item\crystalite_hammer.json
 e9b9264287587d213dfdca110af788efb11409d2 assets\hilmod\blockstates\raw_crystalite_block.json
 0c7375f4251c81cd33611e2ddf7d064ad04d6373 assets\hilmod\models\block\crystalite_button.json
 ebd844ef44b91f8e2c02cb6dac53bb5795e5038f assets\hilmod\blockstates\crystalite_slab.json
@@ -39,9 +40,9 @@ c40152b648b337ba2685f2e523ac3790b816db97 assets\hilmod\models\block\crystalite_s
 e8e844cac8a157f9066b43a7ce6dc86f417f2937 assets\hilmod\models\item\crystalite_wall.json
 06b3a86feaec80f2756acaf491bbd78d85a8b28c assets\hilmod\models\item\chisel.json
 67f2188233b4abdc794cf9df78dbe7d7ae48fe7b assets\hilmod\models\block\crystalite_stairs_outer.json
-80491e79c0d32fc0dc7c51bcea73ec86d3a7bcb2 assets\hilmod\models\item\raw_crystalite_block.json
 b82c89eaae00e7d3c92b445437fc9bffcc97d9db assets\hilmod\models\item\cauliflower.json
 8b0a7dce712faaab5b1bd8df5acbaf3ec27ec237 assets\hilmod\blockstates\crystalite_deepslate_ore.json
+80491e79c0d32fc0dc7c51bcea73ec86d3a7bcb2 assets\hilmod\models\item\raw_crystalite_block.json
 6b5344b355dbce6d880361ba6ad1d7e8bd97ca51 assets\hilmod\models\block\crystalite_door_bottom_left.json
 0c77c1f0ddfd0cc5f37de0fda3cfcbf3fd293f75 assets\hilmod\models\item\crystalite_lamp.json
 ea8f4dd0f2ae6b62baa5bd6d25fc79b4ce73bb15 assets\hilmod\models\item\crystalite_door.json

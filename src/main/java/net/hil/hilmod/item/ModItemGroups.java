@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CAULIFLOWER);
 
                         entries.add(ModItems.CHISEL);
+                        entries.add(ModItems.CRYSALITE_HAMMER);
 
                         entries.add(ModItems.ENDER_ROD);
 

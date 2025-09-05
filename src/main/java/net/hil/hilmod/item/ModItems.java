@@ -3,6 +3,7 @@ package net.hil.hilmod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hil.hilmod.HilMod;
 import net.hil.hilmod.item.custom.ChiselItem;
+import net.hil.hilmod.item.custom.HammerItem;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -48,7 +49,9 @@ public class ModItems {
     public static final Item CRYSTALITE_HOE = registerItem("crystalite_hoe",
             new HoeItem(ModToolMaterials.CRYSTALITE, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.CRYSTALITE, 0, -3f))));
-
+    public static final Item CRYSALITE_HAMMER = registerItem("crystalite_hammer",
+            new HammerItem(ModToolMaterials.CRYSTALITE, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.CRYSTALITE, 7, -3.4f))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(HilMod.MOD_ID, name), item);
