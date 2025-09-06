@@ -36,6 +36,8 @@ public class ModItemGroups {
                         entries.add(ModItems.CRYSTALITE_CHESTPLATE);
                         entries.add(ModItems.CRYSTALITE_LEGGINGS);
                         entries.add(ModItems.CRYSTALITE_BOOTS);
+
+                        entries.add(ModItems.CRYSTALITE_HORSE_ARMOR);
                     }).build());
 
     public static final ItemGroup CRYSTELITE_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
