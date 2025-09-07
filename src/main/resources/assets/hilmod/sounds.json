@@ -1,0 +1,38 @@
+{
+  "chisel_use": {
+    "subtitle": "sounds.hilmod.chisel_use",
+    "sounds": [
+      "hilmod:chisel_use"
+    ]
+  },
+  "magic_block_break": {
+    "subtitle": "sounds.hilmod.magic_block_break",
+    "sounds": [
+      "hilmod:magic_block_break"
+    ]
+  },
+  "magic_block_step": {
+    "subtitle": "sounds.hilmod.magic_block_step",
+    "sounds": [
+      "hilmod:magic_block_step"
+    ]
+  },
+  "magic_block_place": {
+    "subtitle": "sounds.hilmod.magic_block_place",
+    "sounds": [
+      "hilmod:magic_block_place"
+    ]
+  },
+  "magic_block_hit": {
+    "subtitle": "sounds.hilmod.magic_block_hit",
+    "sounds": [
+      "hilmod:magic_block_hit"
+    ]
+  },
+  "magic_block_fall": {
+    "subtitle": "sounds.hilmod.magic_block_fall",
+    "sounds": [
+      "hilmod:magic_block_fall"
+    ]
+  }
+}

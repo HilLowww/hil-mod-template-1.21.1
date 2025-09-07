@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hil.hilmod.HilMod;
 import net.hil.hilmod.block.custom.CrystaliteLampBlock;
 import net.hil.hilmod.block.custom.MagicBlock;
+import net.hil.hilmod.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -32,7 +33,7 @@ public class ModBlocks {
                     AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
-            new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+            new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
     public static final Block CRYSTALITE_STAIRS = registerBlock("crystalite_stairs",
             new StairsBlock(ModBlocks.CRYSTALITE_BLOCK.getDefaultState(),
