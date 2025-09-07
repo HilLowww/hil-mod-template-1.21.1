@@ -48,7 +48,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_CRYSTALITE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED);
+        //itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDER_ROD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CRYSTALITE_SWORD, Models.HANDHELD);

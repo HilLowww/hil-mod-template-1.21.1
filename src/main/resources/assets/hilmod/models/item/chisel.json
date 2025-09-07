@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hilmod:item/chisel"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "hilmod:used": 1
+      },
+      "model": "hilmod:item/chisel_used"
+    }
+  ]
+}
