@@ -64,5 +64,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.CRYSTALITE_BOOTS));
 
         itemModelGenerator.register(ModItems.CRYSTALITE_HORSE_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HIL_SMITHING_TEMPLATE, Models.GENERATED);
     }
 }

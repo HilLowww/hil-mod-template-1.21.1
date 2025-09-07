@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-06T14:00:26.5714742	Hil Mod/Recipes
+// 1.21.1	2025-09-07T08:42:04.8151795	Hil Mod/Recipes
 b1f33ff2eb4d09cb7b58d1c29787807cbfba3ab1 data\hilmod\recipe\crystalite_from_blasting_crystalite_ore.json
 61dc3f8cfadd1cd70b73e3b9aa1964ce8e2e0d03 data\hilmod\recipe\crystalite_from_smelting_crystalite_ore.json
 7b2a4cdda652e60c05e6c35d08fd25e32efb2597 data\hilmod\recipe\crystalite_axe.json
@@ -6,6 +6,7 @@ d21a26cfbea76567c1d56c5988f150656d9fb3c0 data\hilmod\recipe\crystalite_hoe.json
 67402fa7aac2653619d07e515f4ab3e2c46f271d data\hilmod\recipe\crystalite_block.json
 2bd5b7ed0f789db2eff9ff537d99f22ff5b4ed46 data\hilmod\advancement\recipes\misc\crystalite_from_blasting_crystalite_deepslate_ore.json
 a77aee04a5f122cd31bf00466f7dcf4f7b556870 data\hilmod\recipe\raw_crystalite_block.json
+bb8f93d39d97eda1aa68e2f677cc3b1b50ccf80e data\hilmod\advancement\recipes\misc\hil.json
 67a2719c4d50f4c8ab4f67b165297febbdfd412b data\hilmod\advancement\recipes\tools\crystalite_axe.json
 4917477dce7e5f1ddd39f1184cb17eec9f013fe5 data\hilmod\advancement\recipes\tools\crystalite_hoe.json
 346a99575bf3562626160b68798a84385ab466bc data\hilmod\advancement\recipes\building_blocks\raw_crystalite.json
@@ -29,3 +30,4 @@ a0f460d46a16be3199db9e1c00d5ed16c12f6715 data\hilmod\advancement\recipes\misc\cr
 f54ec7927643eb287c6ea18b2645d642a582b797 data\hilmod\recipe\crystalite.json
 862204b418bce82205679b89ca0b015d5c80d873 data\hilmod\advancement\recipes\decorations\raw_crystalite_block.json
 36d2ff0db90d74a742cc8abf223dd3bd679ce9dd data\hilmod\advancement\recipes\misc\crystalite_from_blasting_raw_crystalite.json
+b575ef7b7dad913603c31ca5e37350e6051a9ed2 data\hilmod\recipe\hil.json

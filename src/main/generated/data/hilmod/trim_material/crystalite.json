@@ -1,0 +1,9 @@
+{
+  "asset_name": "crystalite",
+  "description": {
+    "color": "#B03FE0",
+    "translate": "trim_material.hilmod.crystalite"
+  },
+  "ingredient": "hilmod:crystalite",
+  "item_model_index": 1.0
+}

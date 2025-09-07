@@ -2,6 +2,7 @@ package net.hil.hilmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.hil.hilmod.HilMod;
 import net.hil.hilmod.block.ModBlocks;
 import net.hil.hilmod.item.ModItems;
 import net.minecraft.data.server.recipe.RecipeExporter;
@@ -10,6 +11,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -70,5 +72,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', Items.STICK)
                 .criterion(hasItem(ModItems.CRYSTALITE), conditionsFromItem(ModItems.CRYSTALITE))
                 .offerTo(recipeExporter);
+
+        offerSmithingTrimRecipe(recipeExporter, ModItems.HIL_SMITHING_TEMPLATE, Identifier.of(HilMod.MOD_ID,"hil"));
     }
 }

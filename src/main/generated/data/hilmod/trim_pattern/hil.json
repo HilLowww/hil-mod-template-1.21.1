@@ -1,0 +1,8 @@
+{
+  "asset_id": "hilmod:hil",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.hilmod.hil"
+  },
+  "template_item": "hilmod:hil_armor_trim_smithing_template"
+}

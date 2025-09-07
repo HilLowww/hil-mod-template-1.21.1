@@ -19,6 +19,7 @@
   "item.hilmod.crystalite_boots": "Crystalite Boots",
 
   "item.hilmod.crystalite_horse_armor": "Crystalite Horse Armor",
+  "item.hilmod.hil_armor_trim_smithing_template": "Hil Smithing Template",
 
 
   "block.hilmod.crystalite_block": "Block of Crystalite",
@@ -50,5 +51,8 @@
   "tooltip.hilmod.chisel":"Press §9Shift§r for more Info",
   "tooltip.hilmod.chisel.shift_down": "This item chisels blocks into Bricks",
   "tooltip.hilmod.end_rod": "Press §9Shift§r for more Info",
-  "tooltip.hilmod.end_rod.shift_down": "This Item is used to power the most powerful machines"
+  "tooltip.hilmod.end_rod.shift_down": "This Item is used to power the most powerful machines",
+
+  "trim_material.hilmod.crystalite": "Crystalite Material",
+  "trim_pattern.hilmod.hil": "Hil Armor Pattern"
 }

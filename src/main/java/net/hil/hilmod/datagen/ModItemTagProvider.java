@@ -33,5 +33,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.CRYSTALITE_CHESTPLATE)
                 .add(ModItems.CRYSTALITE_LEGGINGS)
                 .add(ModItems.CRYSTALITE_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.CRYSTALITE);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.HIL_SMITHING_TEMPLATE);
     }
 }
