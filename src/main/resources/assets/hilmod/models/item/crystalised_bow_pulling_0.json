@@ -1,0 +1,6 @@
+{
+  "parent": "hilmod:item/crystalised_bow",
+  "textures": {
+    "layer0": "hilmod:item/crystalised_bow_pulling_0"
+  }
+}

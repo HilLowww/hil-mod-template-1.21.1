@@ -31,6 +31,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CRYSTALITE_SHOVEL);
                         entries.add(ModItems.CRYSTALITE_AXE);
                         entries.add(ModItems.CRYSTALITE_HOE);
+                        entries.add(ModItems.CRYSTALISED_BOW);
 
                         entries.add(ModItems.CRYSTALITE_HELMET);
                         entries.add(ModItems.CRYSTALITE_CHESTPLATE);

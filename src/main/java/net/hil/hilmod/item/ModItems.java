@@ -76,6 +76,9 @@ public class ModItems {
     public static final Item HIL_SMITHING_TEMPLATE = registerItem("hil_armor_trim_smithing_template",
             SmithingTemplateItem.of(Identifier.of(HilMod.MOD_ID, "hil"), FeatureFlags.VANILLA));
 
+    public static final Item CRYSTALISED_BOW = registerItem("crystalised_bow",
+            new BowItem(new Item.Settings().maxDamage(500)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(HilMod.MOD_ID, name), item);
     }
