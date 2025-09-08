@@ -22,20 +22,6 @@ public class HilModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CRYSTALITE_TRAPDOOR, RenderLayer.getCutout());
 
         ModModelPredicates.registerModelPredicates();
-        AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
-            if (entity instanceof SheepEntity sheepEntity && !world.isClient) {
-                if (player.getMainHandStack().getItem() == Items.END_ROD) {
-                    player.sendMessage(Text.literal("THE PLAYER HIT A SHEEEEEEEEP"));
-                    player.getMainHandStack().decrement(1);
-                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 600, 1));
-                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 600, 2));
-                    sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 600, 2));
-                }
-                return ActionResult.PASS;
-            }
 
-
-            return ActionResult.SUCCESS;
-        });
     }
 }
