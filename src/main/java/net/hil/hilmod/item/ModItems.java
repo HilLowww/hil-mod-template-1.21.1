@@ -5,17 +5,16 @@ import net.hil.hilmod.HilMod;
 import net.hil.hilmod.item.custom.ChiselItem;
 import net.hil.hilmod.item.custom.HammerItem;
 import net.hil.hilmod.item.custom.ModArmorItem;
+import net.hil.hilmod.sound.ModSounds;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.resource.featuretoggle.FeatureFlag;
 import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-import java.lang.invoke.SwitchPoint;
 import java.util.List;
 
 public class ModItems {
@@ -78,6 +77,9 @@ public class ModItems {
 
     public static final Item CRYSTALISED_BOW = registerItem("crystalised_bow",
             new BowItem(new Item.Settings().maxDamage(500)));
+
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(HilMod.MOD_ID, name), item);

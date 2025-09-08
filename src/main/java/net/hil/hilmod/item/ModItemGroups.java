@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CRYSTALITE);
 
                         entries.add(ModItems.CAULIFLOWER);
+                        entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
 
                         entries.add(ModItems.CHISEL);
                         entries.add(ModItems.CRYSALITE_HAMMER);
