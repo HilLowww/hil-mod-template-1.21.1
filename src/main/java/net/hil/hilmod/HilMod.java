@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.hil.hilmod.block.ModBlocks;
 import net.hil.hilmod.component.ModDataComponentTypes;
+import net.hil.hilmod.effect.ModEffects;
 import net.hil.hilmod.item.ModItemGroups;
 import net.hil.hilmod.item.ModItems;
 import net.hil.hilmod.util.HammerUseageEvent;
@@ -24,7 +25,7 @@ public class HilMod implements ModInitializer {
         ModBlocks.registerModBlocks();
         ModFuels.registerModFuels();
         ModDataComponentTypes.registerDataComponentTypes();
-
+        ModEffects.registerEffects();
 
         PlayerBlockBreakEvents.BEFORE.register(new HammerUseageEvent());
 	}

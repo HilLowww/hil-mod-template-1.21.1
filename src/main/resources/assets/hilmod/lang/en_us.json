@@ -57,5 +57,7 @@
   "tooltip.hilmod.end_rod.shift_down": "This Item is used to power the most powerful machines",
 
   "trim_material.hilmod.crystalite": "Crystalite Material",
-  "trim_pattern.hilmod.hil": "Hil Armor Pattern"
+  "trim_pattern.hilmod.hil": "Hil Armor Pattern",
+
+  "effect.hilmod.slimey": "Slimey"
 }
