@@ -63,5 +63,12 @@
   "trim_material.hilmod.crystalite": "Crystalite Material",
   "trim_pattern.hilmod.hil": "Hil Armor Pattern",
 
-  "effect.hilmod.slimey": "Slimey"
+  "effect.hilmod.slimey": "Slimey",
+
+  "painting.hilmod.world.title": "World",
+  "painting.hilmod.world.author": "NanoAttack",
+  "painting.hilmod.shrimp.title": "Shrimp",
+  "painting.hilmod.shrimp.author": "NanoAttack",
+  "painting.hilmod.saw_them.title": "Saw Them",
+  "painting.hilmod.saw_them.author": "NanoAttack"
 }
