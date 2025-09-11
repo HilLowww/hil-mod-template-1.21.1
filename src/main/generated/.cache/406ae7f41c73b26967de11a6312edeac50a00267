@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-08T13:23:45.1696384	Hil Mod/Tags for minecraft:item
+// 1.21.1	2025-09-11T13:41:06.5458587	Hil Mod/Tags for minecraft:item
 6f58f16691f9f8c77de768379e929f2c1ae1936a data\minecraft\tags\item\hoes.json
 d0b19098f06c4d30585f4a8b615f357ffed9d0f6 data\minecraft\tags\item\trim_materials.json
 f75dd26dc6a66f29dd59ef93b30540b49ab3faa1 data\hilmod\tags\item\transformable_items.json
@@ -8,3 +8,4 @@ f75dd26dc6a66f29dd59ef93b30540b49ab3faa1 data\hilmod\tags\item\transformable_ite
 1167578c345f4182ffbb73bc8d15e81607eb040a data\minecraft\tags\item\axes.json
 52c9160fd9d0251a438597162b2f671447a021bc data\minecraft\tags\item\pickaxes.json
 aa4e4a96a2152f859f939d97605b950c4af62dbc data\minecraft\tags\item\shovels.json
+ea21e99f374d002a6788160d280fe9d4432ca29a data\hilmod\tags\item\lightning_enchantable.json

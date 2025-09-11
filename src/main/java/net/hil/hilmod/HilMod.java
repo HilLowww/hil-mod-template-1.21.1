@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.hil.hilmod.block.ModBlocks;
 import net.hil.hilmod.component.ModDataComponentTypes;
 import net.hil.hilmod.effect.ModEffects;
+import net.hil.hilmod.enchantment.ModEnchantmentsEffects;
 import net.hil.hilmod.item.ModItemGroups;
 import net.hil.hilmod.item.ModItems;
 import net.hil.hilmod.potion.ModPotions;
@@ -39,6 +40,7 @@ public class HilMod implements ModInitializer {
         ModDataComponentTypes.registerDataComponentTypes();
         ModEffects.registerEffects();
         ModPotions.registerPotions();
+        ModEnchantmentsEffects.registerEnchentmentsefects();
 
         PlayerBlockBreakEvents.BEFORE.register(new HammerUseageEvent());
 

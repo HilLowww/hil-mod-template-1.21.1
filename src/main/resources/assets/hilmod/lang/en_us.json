@@ -70,5 +70,7 @@
   "painting.hilmod.shrimp.title": "Shrimp",
   "painting.hilmod.shrimp.author": "NanoAttack",
   "painting.hilmod.saw_them.title": "Saw Them",
-  "painting.hilmod.saw_them.author": "NanoAttack"
+  "painting.hilmod.saw_them.author": "NanoAttack",
+
+  "enchantment.hilmod.lighting_strike": "Lightning Strike"
 }

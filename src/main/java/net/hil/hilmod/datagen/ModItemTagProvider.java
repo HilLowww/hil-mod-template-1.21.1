@@ -39,5 +39,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.HIL_SMITHING_TEMPLATE);
+
+        getOrCreateTagBuilder(ModTags.Items.LIGHTNING_ENCHANTABLE)
+                .add(ModItems.CRYSTALISED_BOW)
+                .addTag(ItemTags.SWORDS);
     }
 }
