@@ -43,6 +43,7 @@ public class ModItemGroups {
                         entries.add(ModItems.HIL_SMITHING_TEMPLATE);
 
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
+                        entries.add(ModItems.BLUE_BERRIES);
                     }).build());
 
     public static final ItemGroup CRYSTELITE_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

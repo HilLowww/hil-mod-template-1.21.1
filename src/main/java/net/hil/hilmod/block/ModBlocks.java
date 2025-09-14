@@ -2,6 +2,7 @@ package net.hil.hilmod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hil.hilmod.HilMod;
+import net.hil.hilmod.block.custom.BlueBerryBushBlock;
 import net.hil.hilmod.block.custom.CauliflowerCropBlock;
 import net.hil.hilmod.block.custom.CrystaliteLampBlock;
 import net.hil.hilmod.block.custom.MagicBlock;
@@ -67,6 +68,9 @@ public class ModBlocks {
         public static final Block CAULIFLOWER_CROP = registerBlockNoItem("cauliflower_crop",
                 new CauliflowerCropBlock(AbstractBlock.Settings.create().noCollision()
                         .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
+        public static final Block BLUE_BERRY_BUSH = registerBlockNoItem("blue_berry_bush",
+                new BlueBerryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
 
     public static Block registerBlock(String name, Block block) {

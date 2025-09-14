@@ -75,6 +75,8 @@
   "enchantment.hilmod.lighting_strike": "Lightning Strike",
 
   "item.hilmod.cauliflower_seeds": "Cauliflower Seeds",
+  "item.hilmod.blue_berries": "Blue Berries",
 
-  "block.hilmod.cauliflower_crop": "Cauliflower Crop"
+  "block.hilmod.cauliflower_crop": "Cauliflower Crop",
+  "block.hilmod.blue_berry_bush": "Blue Berry Bush"
 }
