@@ -2,10 +2,12 @@ package net.hil.hilmod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hil.hilmod.HilMod;
+import net.hil.hilmod.block.custom.CauliflowerCropBlock;
 import net.hil.hilmod.block.custom.CrystaliteLampBlock;
 import net.hil.hilmod.block.custom.MagicBlock;
 import net.hil.hilmod.sound.ModSounds;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -62,9 +64,16 @@ public class ModBlocks {
                 new CrystaliteLampBlock(AbstractBlock.Settings.create()
                         .strength(1f).requiresTool().luminance(state ->state.get(CrystaliteLampBlock.CLICKED) ? 15 : 0)));
 
+        public static final Block CAULIFLOWER_CROP = registerBlockNoItem("cauliflower_crop",
+                new CauliflowerCropBlock(AbstractBlock.Settings.create().noCollision()
+                        .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
 
     public static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(HilMod.MOD_ID, name), block);
+    }
+    public static Block registerBlockNoItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(HilMod.MOD_ID, name), block);
     }
 

@@ -72,5 +72,9 @@
   "painting.hilmod.saw_them.title": "Saw Them",
   "painting.hilmod.saw_them.author": "NanoAttack",
 
-  "enchantment.hilmod.lighting_strike": "Lightning Strike"
+  "enchantment.hilmod.lighting_strike": "Lightning Strike",
+
+  "item.hilmod.cauliflower_seeds": "Cauliflower Seeds",
+
+  "block.hilmod.cauliflower_crop": "Cauliflower Crop"
 }

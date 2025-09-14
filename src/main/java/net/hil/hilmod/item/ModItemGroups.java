@@ -41,6 +41,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CRYSTALITE_HORSE_ARMOR);
                         entries.add(ModItems.HIL_SMITHING_TEMPLATE);
+
+                        entries.add(ModItems.CAULIFLOWER_SEEDS);
                     }).build());
 
     public static final ItemGroup CRYSTELITE_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

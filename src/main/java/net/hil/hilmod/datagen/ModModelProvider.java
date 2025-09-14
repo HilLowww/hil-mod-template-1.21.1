@@ -3,6 +3,7 @@ package net.hil.hilmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.hil.hilmod.block.ModBlocks;
+import net.hil.hilmod.block.custom.CauliflowerCropBlock;
 import net.hil.hilmod.block.custom.CrystaliteLampBlock;
 import net.hil.hilmod.item.ModItems;
 import net.minecraft.data.client.*;
@@ -40,6 +41,8 @@ public class ModModelProvider extends FabricModelProvider {
         Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.CRYSTALITE_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.CRYSTALITE_LAMP)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(CrystaliteLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
+
+        blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0,1,2,3,4,5,6);
     }
 
     @Override
