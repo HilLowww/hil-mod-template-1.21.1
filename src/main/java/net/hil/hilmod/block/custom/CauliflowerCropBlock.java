@@ -4,6 +4,7 @@ import net.hil.hilmod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropBlock;
+import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
@@ -35,4 +36,13 @@ public class CauliflowerCropBlock extends CropBlock {
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(AGE);
     }
+
+    @Override
+    protected boolean canPathfindThrough(BlockState state, NavigationType type) {
+        if (type == NavigationType.LAND) {
+            return false;
+        }
+        return super.canPathfindThrough(state, type);
+    }
+
 }
