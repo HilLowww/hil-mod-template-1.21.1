@@ -7,6 +7,8 @@ import net.hil.hilmod.enchantment.ModEnchantments;
 import net.hil.hilmod.enchantment.ModEnchantmentsEffects;
 import net.hil.hilmod.trim.ModTrimMaterials;
 import net.hil.hilmod.trim.ModTrimPatterns;
+import net.hil.hilmod.world.ModConfiguredFeatures;
+import net.hil.hilmod.world.ModPlacedFeatures;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 
@@ -28,5 +30,8 @@ public class HilModDataGenerator implements DataGeneratorEntrypoint {
         registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
         registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
         registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
+
+        registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+        registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
     }
 }

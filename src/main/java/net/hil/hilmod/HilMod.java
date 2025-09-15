@@ -6,7 +6,6 @@ import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.hil.hilmod.block.ModBlocks;
 import net.hil.hilmod.component.ModDataComponentTypes;
 import net.hil.hilmod.effect.ModEffects;
@@ -15,12 +14,11 @@ import net.hil.hilmod.item.ModItemGroups;
 import net.hil.hilmod.item.ModItems;
 import net.hil.hilmod.potion.ModPotions;
 import net.hil.hilmod.util.HammerUseageEvent;
-import net.hil.hilmod.util.ModTags;
+import net.hil.hilmod.world.gen.ModWorldGeneration;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.item.Items;
-import net.minecraft.potion.Potion;
 import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
@@ -42,6 +40,7 @@ public class HilMod implements ModInitializer {
         ModEffects.registerEffects();
         ModPotions.registerPotions();
         ModEnchantmentsEffects.registerEnchentmentsefects();
+        ModWorldGeneration.generateModWorldGen();
 
         PlayerBlockBreakEvents.BEFORE.register(new HammerUseageEvent());
 
