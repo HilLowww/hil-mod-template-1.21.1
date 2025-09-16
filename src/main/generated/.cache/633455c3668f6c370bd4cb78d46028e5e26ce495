@@ -1,15 +1,17 @@
-// 1.21.1	2025-09-14T16:17:12.3091014	Hil Mod/Block Loot Tables
-0fc9ef8fa42c9f228665bb1464e8888b5421b545 data\hilmod\loot_table\blocks\crystalite_trapdoor.json
+// 1.21.1	2025-09-15T15:34:36.6426247	Hil Mod/Block Loot Tables
 e23f695582f2870d4b279e7887c933f844ce78d9 data\hilmod\loot_table\blocks\blue_berry_bush.json
+0fc9ef8fa42c9f228665bb1464e8888b5421b545 data\hilmod\loot_table\blocks\crystalite_trapdoor.json
 40cd6ae0eae776a5316151b699ecb0fb5677297a data\hilmod\loot_table\blocks\crystalite_slab.json
 de112a5fbe4766a34cc8ded5ac626e0c7ba9340a data\hilmod\loot_table\blocks\crystalite_block.json
 c4e74ac190c8622c783aa3ed9cf2f6deacde2f2f data\hilmod\loot_table\blocks\crystalite_deepslate_ore.json
+12938c8853d6596c796c11d639fc7d7ec573c3b6 data\hilmod\loot_table\blocks\crystalite_end_ore.json
 befdaf201a414ddcd4fe3b05c40fab13baf81de6 data\hilmod\loot_table\blocks\crystalite_fence_gate.json
 d739c66b801bc30b6bb6e533bcc5efbc4554d53c data\hilmod\loot_table\blocks\crystalite_stairs.json
 be6cc392ba95433f23d9b70f0146bb2c8d90b22a data\hilmod\loot_table\blocks\cauliflower_crop.json
 659c26e6361be20e958e7fe04d892511ff1d6d0d data\hilmod\loot_table\blocks\crystalite_ore.json
 7c0023f93e11cf13c3f67e8ffc3fc9332adb67e2 data\hilmod\loot_table\blocks\raw_crystalite_block.json
 dd2793e14f0dd528487fed9936922e82e69fc4ea data\hilmod\loot_table\blocks\crystalite_fence.json
+abd86a39b904d94d1eb77c3864732deda5567197 data\hilmod\loot_table\blocks\crystalite_nether_ore.json
 a61ee3717988bf01f1a0c98ac81f3ec8b7ffa5eb data\hilmod\loot_table\blocks\crystalite_button.json
 e483f57eae544c12545428acef1c57b4bf72a39e data\hilmod\loot_table\blocks\crystalite_door.json
 3412568b2c313de1e4fcaaa308d91a2363c3ef65 data\hilmod\loot_table\blocks\crystalite_wall.json

@@ -50,6 +50,8 @@
 
   "block.hilmod.crystalite_ore": "Crystalite Ore",
   "block.hilmod.crystalite_deepslate_ore": "Crystalite Deepslate Ore",
+  "block.hilmod.crystalite_end_ore": "Crystalite End Ore",
+  "block.hilmod.crystalite_nether_ore": "Crystalite Nether Ore",
 
   "itemgroup.hilmod.crystalite_items_group": "Crystalite Items",
   "itemgroup.hilmod.crystalite_blocks_group": "Crystalite Blocks",

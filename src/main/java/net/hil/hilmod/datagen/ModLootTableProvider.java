@@ -85,6 +85,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                 )
                 )
         );
+
+
+        addDrop(ModBlocks.CRYSTALITE_END_ORE, multipleOreDrops(ModBlocks.CRYSTALITE_END_ORE, ModItems.RAW_CRYSTALITE, 4, 9));
+        addDrop(ModBlocks.CRYSTALITE_NETHER_ORE, multipleOreDrops(ModBlocks.CRYSTALITE_NETHER_ORE, ModItems.RAW_CRYSTALITE, 2, 8));
+
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {
