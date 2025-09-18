@@ -1,3 +1,6 @@
 {
-  "parent": "hilmod:block/driftwood_sapling"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hilmod:item/driftwood_sapling"
+  }
 }
