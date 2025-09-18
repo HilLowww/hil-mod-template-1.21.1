@@ -62,6 +62,14 @@
   "tooltip.hilmod.end_rod": "Press §9Shift§r for more Info",
   "tooltip.hilmod.end_rod.shift_down": "This Item is used to power the most powerful machines",
 
+  "block.hilmod.driftwood_log": "Driftwood Log",
+  "block.hilmod.driftwood_wood": "Driftwood Wood",
+  "block.hilmod.stripped_driftwood_log": "Stripped Driftwood Log",
+  "block.hilmod.stripped_driftwood_wood": "Stripped Driftwood Wood",
+  "block.hilmod.driftwood_planks": "Driftwood Planks",
+  "block.hilmod.driftwood_leaves": "Driftwood Leaves",
+  "block.hilmod.driftwood_sapling": "Driftwood Sapling",
+
   "trim_material.hilmod.crystalite": "Crystalite Material",
   "trim_pattern.hilmod.hil": "Hil Armor Pattern",
 

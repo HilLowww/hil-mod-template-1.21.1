@@ -1,11 +1,13 @@
-// 1.21.1	2025-09-15T15:34:36.6438718	Hil Mod/Tags for minecraft:item
+// 1.21.1	2025-09-17T17:29:32.9649254	Hil Mod/Tags for minecraft:item
+9ba8f6be5c8b4bb69dfb064cef49f3e6c0ffb71c data\minecraft\tags\item\trim_templates.json
+5c953ff2d0ac44361518b28e338040efc5be4a4f data\minecraft\tags\item\swords.json
+1167578c345f4182ffbb73bc8d15e81607eb040a data\minecraft\tags\item\axes.json
+10b759db59b36a2cfbd190d4ff7adbef839f9850 data\minecraft\tags\item\logs_that_burn.json
+aa4e4a96a2152f859f939d97605b950c4af62dbc data\minecraft\tags\item\shovels.json
+52c9160fd9d0251a438597162b2f671447a021bc data\minecraft\tags\item\pickaxes.json
+ea21e99f374d002a6788160d280fe9d4432ca29a data\hilmod\tags\item\lightning_enchantable.json
+4bc5fd74bf00abf82a102e9d0e8764a487d84fc4 data\minecraft\tags\item\planks.json
 6f58f16691f9f8c77de768379e929f2c1ae1936a data\minecraft\tags\item\hoes.json
 d0b19098f06c4d30585f4a8b615f357ffed9d0f6 data\minecraft\tags\item\trim_materials.json
 f75dd26dc6a66f29dd59ef93b30540b49ab3faa1 data\hilmod\tags\item\transformable_items.json
-9ba8f6be5c8b4bb69dfb064cef49f3e6c0ffb71c data\minecraft\tags\item\trim_templates.json
 5ef4b2652445d6fd2f083f3c2a0fa335a7b093cc data\minecraft\tags\item\trimmable_armor.json
-5c953ff2d0ac44361518b28e338040efc5be4a4f data\minecraft\tags\item\swords.json
-1167578c345f4182ffbb73bc8d15e81607eb040a data\minecraft\tags\item\axes.json
-52c9160fd9d0251a438597162b2f671447a021bc data\minecraft\tags\item\pickaxes.json
-aa4e4a96a2152f859f939d97605b950c4af62dbc data\minecraft\tags\item\shovels.json
-ea21e99f374d002a6788160d280fe9d4432ca29a data\hilmod\tags\item\lightning_enchantable.json

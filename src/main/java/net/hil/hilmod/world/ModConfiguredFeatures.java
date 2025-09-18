@@ -11,10 +11,12 @@ import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
 
@@ -22,6 +24,8 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRYSTALITE_ORE_KEY = registerKey("crystalite_ore_key");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_CRYSTALITE_ORE_KEY = registerKey("nether_crystalite_ore_key");
     public static final RegistryKey<ConfiguredFeature<?, ?>> END_CRYSTALITE_ORE_KEY = registerKey("end_crystalite_ore_key");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DRIFTWOOD_KEY = registerKey("driftwood");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -40,6 +44,15 @@ public class ModConfiguredFeatures {
         register(context, CRYSTALITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCrystaliteOres, 12));
         register(context, NETHER_CRYSTALITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherCrystaliteOres, 6));
         register(context, END_CRYSTALITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(endCrystaliteOres, 7));
+
+        register(context, DRIFTWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.DRIFTWOOD_LOG),
+                new StraightTrunkPlacer(5, 6, 3),
+
+                BlockStateProvider.of(ModBlocks.DRIFTWOOD_LEAVES),
+                new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), 3),
+
+                new TwoLayersFeatureSize(1, 0, 2)).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

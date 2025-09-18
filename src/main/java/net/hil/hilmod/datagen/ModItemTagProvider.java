@@ -2,6 +2,7 @@ package net.hil.hilmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.hil.hilmod.block.ModBlocks;
 import net.hil.hilmod.item.ModItems;
 import net.hil.hilmod.util.ModTags;
 import net.minecraft.item.Items;
@@ -43,5 +44,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.LIGHTNING_ENCHANTABLE)
                 .add(ModItems.CRYSTALISED_BOW)
                 .addTag(ItemTags.SWORDS);
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DRIFTWOOD_LOG.asItem())
+                .add(ModBlocks.DRIFTWOOD_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_LOG.asItem())
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.DRIFTWOOD_PLANKS.asItem());
+
     }
 }

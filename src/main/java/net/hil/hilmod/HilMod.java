@@ -6,6 +6,8 @@ import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.hil.hilmod.block.ModBlocks;
 import net.hil.hilmod.component.ModDataComponentTypes;
 import net.hil.hilmod.effect.ModEffects;
@@ -15,6 +17,7 @@ import net.hil.hilmod.item.ModItems;
 import net.hil.hilmod.potion.ModPotions;
 import net.hil.hilmod.util.HammerUseageEvent;
 import net.hil.hilmod.world.gen.ModWorldGeneration;
+import net.minecraft.block.FireBlock;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.SheepEntity;
@@ -66,5 +69,16 @@ public class HilMod implements ModInitializer {
 
         CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER, 0.5f);
         CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER_SEEDS, 0.3f);
+
+        StrippableBlockRegistry.register(ModBlocks.DRIFTWOOD_LOG, ModBlocks.STRIPPED_DRIFTWOOD_LOG);
+        StrippableBlockRegistry.register(ModBlocks.DRIFTWOOD_WOOD, ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
+
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DRIFTWOOD_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_SAPLING, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_LEAVES, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_PLANKS, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_WOOD, 5, 5);
 	}
 }
