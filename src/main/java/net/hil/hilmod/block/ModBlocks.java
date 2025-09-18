@@ -2,10 +2,7 @@ package net.hil.hilmod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hil.hilmod.HilMod;
-import net.hil.hilmod.block.custom.BlueBerryBushBlock;
-import net.hil.hilmod.block.custom.CauliflowerCropBlock;
-import net.hil.hilmod.block.custom.CrystaliteLampBlock;
-import net.hil.hilmod.block.custom.MagicBlock;
+import net.hil.hilmod.block.custom.*;
 import net.hil.hilmod.sound.ModSounds;
 import net.hil.hilmod.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
@@ -88,7 +85,7 @@ public class ModBlocks {
         new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
 
         public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling",
-                new SaplingBlock(ModSaplingGenerators.DRIFTWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+                new ModMagicSaplingBlock(ModSaplingGenerators.DRIFTWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), ModBlocks.MAGIC_BLOCK));
 
 
 
