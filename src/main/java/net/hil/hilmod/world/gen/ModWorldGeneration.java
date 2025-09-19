@@ -7,6 +7,7 @@ public class ModWorldGeneration {
         ModOreGeneration.generateOres();
 
         ModTreeGeneration.genorateTrees();
+        ModBushGeneration.generateBushes();
     }
 
 }

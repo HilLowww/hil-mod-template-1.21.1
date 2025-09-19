@@ -7,11 +7,10 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
-import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
-import net.minecraft.world.gen.placementmodifier.HeightmapPlacementModifier;
-import net.minecraft.world.gen.placementmodifier.PlacementModifier;
+import net.minecraft.world.gen.placementmodifier.*;
 
 import java.util.List;
 
@@ -22,6 +21,8 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> END_CRYSTALITE_ORE_PLACED_KEY = registerKey("end_crystalite_ore_placed");
 
     public static final RegistryKey<PlacedFeature> DRIFTWOOD_PLACES_KEY = registerKey("driftwood_placed");
+
+    public static final RegistryKey<PlacedFeature> BLUE_BERRY_PLACED_KEY = registerKey("blue_berry_placed_key");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -39,6 +40,9 @@ public class ModPlacedFeatures {
         register(context, DRIFTWOOD_PLACES_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DRIFTWOOD_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(2,0.1f,2), ModBlocks.DRIFTWOOD_SAPLING));
+
+        register(context, BLUE_BERRY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLUE_BERRY_BUSH),
+                RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

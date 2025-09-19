@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-18T15:16:25.4948911	Hil Mod/Block Loot Tables
+// 1.21.1	2025-09-18T17:54:20.2820001	Hil Mod/Block Loot Tables
 6685f3e102ff49584eda5bfb909191a3753f23ed data\hilmod\loot_table\blocks\driftwood_wood.json
 e2155f436dd5159756f211984897e275cd5d6d68 data\hilmod\loot_table\blocks\striped_driftwood_wood.json
 de112a5fbe4766a34cc8ded5ac626e0c7ba9340a data\hilmod\loot_table\blocks\crystalite_block.json
@@ -14,8 +14,8 @@ a61ee3717988bf01f1a0c98ac81f3ec8b7ffa5eb data\hilmod\loot_table\blocks\crystalit
 3412568b2c313de1e4fcaaa308d91a2363c3ef65 data\hilmod\loot_table\blocks\crystalite_wall.json
 e483f57eae544c12545428acef1c57b4bf72a39e data\hilmod\loot_table\blocks\crystalite_door.json
 099f464f72800e6483b937ffba195ba1d413ce34 data\hilmod\loot_table\blocks\crystalite_pressure_plate.json
-e23f695582f2870d4b279e7887c933f844ce78d9 data\hilmod\loot_table\blocks\blue_berry_bush.json
 0fc9ef8fa42c9f228665bb1464e8888b5421b545 data\hilmod\loot_table\blocks\crystalite_trapdoor.json
+e23f695582f2870d4b279e7887c933f844ce78d9 data\hilmod\loot_table\blocks\blue_berry_bush.json
 40cd6ae0eae776a5316151b699ecb0fb5677297a data\hilmod\loot_table\blocks\crystalite_slab.json
 c4e74ac190c8622c783aa3ed9cf2f6deacde2f2f data\hilmod\loot_table\blocks\crystalite_deepslate_ore.json
 e1ab3f8d23addeb02e40e0c4472ee983e5103592 data\hilmod\loot_table\blocks\stripped_driftwood_log.json

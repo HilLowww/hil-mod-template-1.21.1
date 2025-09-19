@@ -2,6 +2,7 @@ package net.hil.hilmod.world;
 
 import net.hil.hilmod.HilMod;
 import net.hil.hilmod.block.ModBlocks;
+import net.hil.hilmod.block.custom.BlueBerryBushBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -26,6 +27,8 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> END_CRYSTALITE_ORE_KEY = registerKey("end_crystalite_ore_key");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> DRIFTWOOD_KEY = registerKey("driftwood");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BLUE_BERRY_BUSH = registerKey("blue_berry_bush");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -53,6 +56,12 @@ public class ModConfiguredFeatures {
                 new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), 3),
 
                 new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(ModBlocks.MAGIC_BLOCK)).build());
+
+        register(context, BLUE_BERRY_BUSH, Feature.RANDOM_PATCH,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(
+                        Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BLUE_BERRY_BUSH.getDefaultState().with(BlueBerryBushBlock.AGE, 3))),
+                                List.of(Blocks.GRASS_BLOCK)));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

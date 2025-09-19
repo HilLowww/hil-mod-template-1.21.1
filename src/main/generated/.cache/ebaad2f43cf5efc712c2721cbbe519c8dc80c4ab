@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-18T15:16:25.4969193	Hil Mod/Model Definitions
+// 1.21.1	2025-09-18T17:54:20.2840357	Hil Mod/Model Definitions
 5450e10b457284ebee4fb6ed125440c2a06ba79d assets\hilmod\models\block\raw_crystalite_block.json
 8f13ad3256f83af37ba7461d095cde90094045c8 assets\hilmod\models\block\crystalite_fence_inventory.json
 7e49e262baf06fbd5239a844f50c9c19dc6fe85a assets\hilmod\models\item\blue_berries.json
@@ -24,8 +24,8 @@ d217a29cdd2ad593793fc70ae1975e7b0fd2129d assets\hilmod\models\item\crystalite_bo
 a5c513e30bc50315e0e7c4f1204faf566e405871 assets\hilmod\blockstates\crystalite_door.json
 0fcf23b44858eb386477dfee3e9a3497cb67942c assets\hilmod\models\item\crystalite_leggings_amethyst_trim.json
 43659ae1bf8f13001bec668896edc78c11acc3c1 assets\hilmod\blockstates\crystalite_button.json
-87e369c07fcf3892dc51dad9ae014cc15aec96e4 assets\hilmod\models\item\crystalite_helmet_copper_trim.json
 7f87c907bd795734d09b46f08638cccb86ad270a assets\hilmod\models\item\crystalite_leggings.json
+87e369c07fcf3892dc51dad9ae014cc15aec96e4 assets\hilmod\models\item\crystalite_helmet_copper_trim.json
 ec17bbbd6764440b7e0ed40979300b969fcb57dc assets\hilmod\models\block\crystalite_block.json
 78c3c84fb7f946eb540416ffa819a5fc044fc232 assets\hilmod\models\block\crystalite_door_top_right_open.json
 5e3ed3c8f8f15d1dd49e47423b760fd56918255c assets\hilmod\models\block\crystalite_fence_gate_wall_open.json
@@ -135,8 +135,8 @@ b6216cf7ea89e261107b7477e656356fcbdd36bc assets\hilmod\models\item\crystalite_bo
 b637812d000a85f64271d5d10a803a99879508ed assets\hilmod\models\item\crystalite_slab.json
 69813c53c038fcfb2afe8acd63fd9fe6951f10fe assets\hilmod\models\block\blue_berry_bush_stage3.json
 8f144269db620694b3297c4ef754b7b9ab93425a assets\hilmod\models\item\crystalite_helmet_iron_trim.json
-6448a31261b8e6d589af1acd7b9ef1cf901bb86d assets\hilmod\models\block\cauliflower_crop_stage5.json
 08157d7f1604ea715723275d47716198a4cb1f51 assets\hilmod\models\block\crystalite_door_top_left_open.json
+6448a31261b8e6d589af1acd7b9ef1cf901bb86d assets\hilmod\models\block\cauliflower_crop_stage5.json
 a0d028e59401977eed184b0a372e9318241210ba assets\hilmod\models\block\crystalite_fence_gate_wall.json
 943400f08d62ceba1b733185d7b17743b0e2b0e6 assets\hilmod\models\item\crystalite_leggings_copper_trim.json
 02d8805d2a4fe60275bb285a207509a457781566 assets\hilmod\models\block\crystalite_deepslate_ore.json
