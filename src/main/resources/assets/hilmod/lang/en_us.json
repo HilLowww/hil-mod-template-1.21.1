@@ -28,6 +28,7 @@
   "item.hilmod.crystalite_horse_armor": "Crystalite Horse Armor",
   "item.hilmod.hil_armor_trim_smithing_template": "Hil Smithing Template",
 
+"item.hilmod.mantis_spawn_egg": "Mantis Spawn Egg",
 
   "block.hilmod.crystalite_block": "Block of Crystalite",
   "block.hilmod.raw_crystalite_block": "Block of Raw Crystalite",
@@ -88,5 +89,7 @@
   "item.hilmod.blue_berries": "Blue Berries",
 
   "block.hilmod.cauliflower_crop": "Cauliflower Crop",
-  "block.hilmod.blue_berry_bush": "Blue Berry Bush"
+  "block.hilmod.blue_berry_bush": "Blue Berry Bush",
+
+  "entity.hilmod.mantis": "Mantis"
 }

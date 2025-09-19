@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -12,6 +13,8 @@ import net.hil.hilmod.block.ModBlocks;
 import net.hil.hilmod.component.ModDataComponentTypes;
 import net.hil.hilmod.effect.ModEffects;
 import net.hil.hilmod.enchantment.ModEnchantmentsEffects;
+import net.hil.hilmod.entity.ModEntities;
+import net.hil.hilmod.entity.custom.MantisEntity;
 import net.hil.hilmod.item.ModItemGroups;
 import net.hil.hilmod.item.ModItems;
 import net.hil.hilmod.potion.ModPotions;
@@ -44,6 +47,7 @@ public class HilMod implements ModInitializer {
         ModPotions.registerPotions();
         ModEnchantmentsEffects.registerEnchentmentsefects();
         ModWorldGeneration.generateModWorldGen();
+        ModEntities.registerEntities();
 
         PlayerBlockBreakEvents.BEFORE.register(new HammerUseageEvent());
 
@@ -80,5 +84,7 @@ public class HilMod implements ModInitializer {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_PLANKS, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_WOOD, 5, 5);
+
+        FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
 	}
 }

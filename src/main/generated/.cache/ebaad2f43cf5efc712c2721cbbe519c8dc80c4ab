@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-18T17:54:20.2840357	Hil Mod/Model Definitions
+// 1.21.1	2025-09-19T14:06:21.5425918	Hil Mod/Model Definitions
 5450e10b457284ebee4fb6ed125440c2a06ba79d assets\hilmod\models\block\raw_crystalite_block.json
 8f13ad3256f83af37ba7461d095cde90094045c8 assets\hilmod\models\block\crystalite_fence_inventory.json
 7e49e262baf06fbd5239a844f50c9c19dc6fe85a assets\hilmod\models\item\blue_berries.json
@@ -79,14 +79,15 @@ fdacd3b9d422896fd196806f36377a8b6acbcfcd assets\hilmod\blockstates\crystalite_or
 f99af11ec2bfb026eb76e4bef2f5c06086b8e5d7 assets\hilmod\models\item\crystalite_block.json
 0370b9f32cdad2d2c2a5db38bc72ddf28669dfa1 assets\hilmod\models\item\crystalite_leggings_netherite_trim.json
 3c516deb89f8d09e78cca3a655b5b36336a86906 assets\hilmod\models\block\cauliflower_crop_stage6.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\hilmod\models\item\mantis_spawn_egg.json
 d0b77da37756c036ad817040c0242057f4020c61 assets\hilmod\models\block\crystalite_fence_gate_open.json
 f91cb827dc283616e33ba468ab44809f4fe535c2 assets\hilmod\models\item\crystalite_chestplate_amethyst_trim.json
 7235c4ab573d26c99d215a5af0c7d22a351a395b assets\hilmod\models\item\crystalite_deepslate_ore.json
 58cefe5c1e44b6a199edbbc1d44799c5a000e255 assets\hilmod\models\block\crystalite_door_bottom_right_open.json
 f08afd8499984a3f65a0fa33d9bb2151b6d44587 assets\hilmod\models\block\driftwood_log.json
 5537fe16a4f78a93a59e7d1e2dee2b4c9821ff71 assets\hilmod\models\item\crystalite_leggings_quartz_trim.json
-6828e8d72c924c745e17b616454131f91f612015 assets\hilmod\models\block\crystalite_wall_post.json
 c1f7f57bd9bf44d1c6eb7cd3d931355c0bcc7823 assets\hilmod\models\item\driftwood_leaves.json
+6828e8d72c924c745e17b616454131f91f612015 assets\hilmod\models\block\crystalite_wall_post.json
 03420017116ad2433b402bda1f1f361ecf04f10e assets\hilmod\models\block\crystalite_door_bottom_right.json
 88c5529f50e1c47234e925409af15b70b0124382 assets\hilmod\models\item\crystalite_leggings_iron_trim.json
 945f5208196e004ac77a2c2546743db92c897149 assets\hilmod\models\block\cauliflower_crop_stage3.json

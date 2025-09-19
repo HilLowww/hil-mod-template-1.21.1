@@ -77,6 +77,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DRIFTWOOD_PLANKS);
                         entries.add(ModBlocks.DRIFTWOOD_SAPLING);
                         entries.add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
+
+                        entries.add(ModItems.MANTIS_SPAWN_EGG);
                     }).build());
 
     public static void registerItemGroups() {

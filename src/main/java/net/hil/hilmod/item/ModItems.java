@@ -3,6 +3,9 @@ package net.hil.hilmod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hil.hilmod.HilMod;
 import net.hil.hilmod.block.ModBlocks;
+import net.hil.hilmod.entity.ModEntities;
+import net.hil.hilmod.entity.client.MantisModel;
+import net.hil.hilmod.entity.custom.MantisEntity;
 import net.hil.hilmod.item.custom.ChiselItem;
 import net.hil.hilmod.item.custom.HammerItem;
 import net.hil.hilmod.item.custom.ModArmorItem;
@@ -16,6 +19,7 @@ import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+import java.lang.management.MonitorInfo;
 import java.util.List;
 
 public class ModItems {
@@ -87,6 +91,9 @@ public class ModItems {
 
     public static final Item BLUE_BERRIES = registerItem("blue_berries",
             new AliasedBlockItem(ModBlocks.BLUE_BERRY_BUSH, new Item.Settings().food(ModFoodComponents.BLUE_BERRIES)));
+
+    public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
+            new SpawnEggItem(ModEntities.MANTIS, 0x9dc783,  0xbfaf5f, new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(HilMod.MOD_ID, name), item);

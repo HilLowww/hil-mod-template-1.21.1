@@ -2,11 +2,17 @@ package net.hil.hilmod;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.impl.client.indigo.renderer.render.BlockRenderContext;
 import net.hil.hilmod.block.ModBlocks;
+import net.hil.hilmod.entity.ModEntities;
+import net.hil.hilmod.entity.client.MantisModel;
+import net.hil.hilmod.entity.client.MantisRenderer;
 import net.hil.hilmod.util.ModModelPredicates;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.SheepEntity;
@@ -28,5 +34,7 @@ public class HilModClient implements ClientModInitializer {
 
         ModModelPredicates.registerModelPredicates();
 
+        EntityModelLayerRegistry.registerModelLayer(MantisModel.MANTIS, MantisModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.MANTIS, MantisRenderer::new);
     }
 }
