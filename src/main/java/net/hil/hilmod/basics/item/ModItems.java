@@ -7,6 +7,7 @@ import net.hil.hilmod.basics.entity.ModEntities;
 import net.hil.hilmod.basics.item.custom.ChiselItem;
 import net.hil.hilmod.basics.item.custom.HammerItem;
 import net.hil.hilmod.basics.item.custom.ModArmorItem;
+import net.hil.hilmod.basics.item.custom.SimpleMagicItem;
 import net.hil.hilmod.basics.sound.ModSounds;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.*;
@@ -91,6 +92,9 @@ public class ModItems {
 
     public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
             new SpawnEggItem(ModEntities.MANTIS, 0x9dc783,  0xbfaf5f, new Item.Settings()));
+
+    public static final Item MAGIC_STICK = registerItem("magic_stick",
+            new SimpleMagicItem(new Item.Settings().maxCount(1), 20));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(HilMod.MOD_ID, name), item);

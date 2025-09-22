@@ -44,6 +44,9 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
                         entries.add(ModItems.BLUE_BERRIES);
+
+                        //MAGIC
+                        entries.add(ModItems.MAGIC_STICK);
                     }).build());
 
     public static final ItemGroup CRYSTELITE_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

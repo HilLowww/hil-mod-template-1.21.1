@@ -30,8 +30,18 @@ public class ManaRegenManager {
     }
 
     // Call this whenever a player spends mana
-    public static void resetRegenDelay(ServerPlayerEntity player, int ticks) {
-        regenDelays.put(player.getUuid(), ticks);
+    public static void resetRegenDelay(ServerPlayerEntity player) {
+        ModMana mana = PlayerManaManager.getMana(player);
+
+        if (mana.getMaxMana() >= mana.getCurrentMana() && mana.getCurrentMana() >= mana.getMaxMana() * 80 / 100) {
+            regenDelays.put(player.getUuid(), 20);
+        } else if (mana.getMaxMana() * 80 / 100 >= mana.getCurrentMana() && mana.getCurrentMana() >= mana.getMaxMana() * 30 / 100) {
+            regenDelays.put(player.getUuid(), 30);
+        }  else if (mana.getMaxMana() * 30 / 100 >= mana.getCurrentMana() && mana.getCurrentMana() >= mana.getMaxMana() * 10 / 100) {
+            regenDelays.put(player.getUuid(), 40);
+        } else if (mana.getMaxMana() * 10 / 100 >= mana.getCurrentMana() && mana.getCurrentMana() >= 0) {
+            regenDelays.put(player.getUuid(), 80);
+        }
     }
 }
 
