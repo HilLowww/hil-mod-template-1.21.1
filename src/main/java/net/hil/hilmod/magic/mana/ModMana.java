@@ -1,4 +1,6 @@
-package net.hil.hilmod.magic.Mana;
+package net.hil.hilmod.magic.mana;
+
+import net.minecraft.server.network.ServerPlayerEntity;
 
 public class ModMana {
     private int maxMana;
@@ -23,12 +25,11 @@ public class ModMana {
 
     public void addMana(int amount) { setCurrentMana(currentMana + amount); }
 
-    public boolean useMana(int amount) {
+    public void useMana(int amount, ServerPlayerEntity player) {
         if (currentMana >= amount) {
             currentMana -= amount;
-            return true;
+            ManaRegenManager.resetRegenDelay(player);
         }
-        return false;
     }
 }
 

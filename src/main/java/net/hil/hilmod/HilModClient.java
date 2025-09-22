@@ -1,6 +1,5 @@
 package net.hil.hilmod;
 
-import com.mojang.blaze3d.systems.RenderSystem;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
@@ -10,16 +9,13 @@ import net.hil.hilmod.basics.block.ModBlocks;
 import net.hil.hilmod.basics.entity.ModEntities;
 import net.hil.hilmod.basics.entity.client.MantisModel;
 import net.hil.hilmod.basics.entity.client.MantisRenderer;
-import net.hil.hilmod.magic.Mana.ModMana;
-import net.hil.hilmod.magic.Mana.PlayerManaManager;
+import net.hil.hilmod.magic.mana.ModMana;
+import net.hil.hilmod.magic.mana.PlayerManaManager;
 import net.hil.hilmod.util.ModModelPredicates;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.gui.hud.InGameHud;
 import net.minecraft.client.render.*;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.Text;
-import org.joml.Matrix4f;
 
 import java.util.UUID;
 

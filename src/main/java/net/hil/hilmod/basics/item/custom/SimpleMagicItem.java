@@ -1,8 +1,7 @@
 package net.hil.hilmod.basics.item.custom;
 
-import net.hil.hilmod.magic.Mana.ManaRegenManager;
-import net.hil.hilmod.magic.Mana.ModMana;
-import net.hil.hilmod.magic.Mana.PlayerManaManager;
+import net.hil.hilmod.magic.mana.ModMana;
+import net.hil.hilmod.magic.mana.PlayerManaManager;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -29,8 +28,7 @@ public class SimpleMagicItem extends Item {
             int cost = this.getManaCost();
             ModMana mana = PlayerManaManager.getMana(user.getUuid());
             if (mana != null && mana.getCurrentMana() >= 10) {
-                mana.useMana(cost);
-                ManaRegenManager.resetRegenDelay((ServerPlayerEntity) user);
+                mana.useMana(cost, (ServerPlayerEntity) user);
                 user.sendMessage(Text.literal("You cast a spell!"), true);
             } else {
                 user.sendMessage(Text.literal("You cast a spell!"), true);

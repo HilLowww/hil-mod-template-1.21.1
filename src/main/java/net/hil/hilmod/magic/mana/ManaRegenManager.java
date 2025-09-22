@@ -1,4 +1,4 @@
-package net.hil.hilmod.magic.Mana;
+package net.hil.hilmod.magic.mana;
 
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayerEntity;
