@@ -2,7 +2,7 @@ package net.hil.hilmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.hil.hilmod.block.ModBlocks;
+import net.hil.hilmod.basics.block.ModBlocks;
 import net.hil.hilmod.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;

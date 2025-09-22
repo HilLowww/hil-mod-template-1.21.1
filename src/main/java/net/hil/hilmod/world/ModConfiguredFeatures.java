@@ -1,8 +1,8 @@
 package net.hil.hilmod.world;
 
 import net.hil.hilmod.HilMod;
-import net.hil.hilmod.block.ModBlocks;
-import net.hil.hilmod.block.custom.BlueBerryBushBlock;
+import net.hil.hilmod.basics.block.ModBlocks;
+import net.hil.hilmod.basics.block.custom.BlueBerryBushBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;

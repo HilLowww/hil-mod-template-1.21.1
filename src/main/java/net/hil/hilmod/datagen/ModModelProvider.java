@@ -2,11 +2,11 @@ package net.hil.hilmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.hil.hilmod.block.ModBlocks;
-import net.hil.hilmod.block.custom.BlueBerryBushBlock;
-import net.hil.hilmod.block.custom.CauliflowerCropBlock;
-import net.hil.hilmod.block.custom.CrystaliteLampBlock;
-import net.hil.hilmod.item.ModItems;
+import net.hil.hilmod.basics.block.ModBlocks;
+import net.hil.hilmod.basics.block.custom.BlueBerryBushBlock;
+import net.hil.hilmod.basics.block.custom.CauliflowerCropBlock;
+import net.hil.hilmod.basics.block.custom.CrystaliteLampBlock;
+import net.hil.hilmod.basics.item.ModItems;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;

@@ -2,12 +2,10 @@ package net.hil.hilmod.world.gen;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
-import net.hil.hilmod.entity.ModEntities;
+import net.hil.hilmod.basics.entity.ModEntities;
 import net.minecraft.entity.SpawnGroup;
-import net.minecraft.entity.SpawnLocation;
 import net.minecraft.entity.SpawnLocationTypes;
 import net.minecraft.entity.SpawnRestriction;
-import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.biome.BiomeKeys;

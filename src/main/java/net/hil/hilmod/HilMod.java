@@ -2,30 +2,36 @@ package net.hil.hilmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
-import net.hil.hilmod.block.ModBlocks;
+import net.hil.hilmod.basics.block.ModBlocks;
 import net.hil.hilmod.component.ModDataComponentTypes;
-import net.hil.hilmod.effect.ModEffects;
-import net.hil.hilmod.enchantment.ModEnchantmentsEffects;
-import net.hil.hilmod.entity.ModEntities;
-import net.hil.hilmod.entity.custom.MantisEntity;
-import net.hil.hilmod.item.ModItemGroups;
-import net.hil.hilmod.item.ModItems;
-import net.hil.hilmod.potion.ModPotions;
+import net.hil.hilmod.basics.effect.ModEffects;
+import net.hil.hilmod.basics.enchantment.ModEnchantmentsEffects;
+import net.hil.hilmod.basics.entity.ModEntities;
+import net.hil.hilmod.basics.entity.custom.MantisEntity;
+import net.hil.hilmod.basics.item.ModItemGroups;
+import net.hil.hilmod.basics.item.ModItems;
+import net.hil.hilmod.basics.potion.ModPotions;
+import net.hil.hilmod.magic.Mana.ManaRegenManager;
+import net.hil.hilmod.magic.Mana.ModMana;
+import net.hil.hilmod.magic.Mana.PlayerManaManager;
 import net.hil.hilmod.util.HammerUseageEvent;
 import net.hil.hilmod.world.gen.ModWorldGeneration;
-import net.minecraft.block.FireBlock;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.item.Items;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.potion.Potions;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import org.slf4j.Logger;
@@ -86,5 +92,22 @@ public class HilMod implements ModInitializer {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_WOOD, 5, 5);
 
         FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
+
+
+
+//MAGIC SECTION
+        ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
+            ServerPlayerEntity player = handler.getPlayer();
+            // if you have saved mana, load and call initializePlayer(player, savedMana)
+            // otherwise initialize default:
+            PlayerManaManager.initializePlayer(player);
+        });
+
+        ServerPlayConnectionEvents.DISCONNECT.register((handler, server) -> {
+            ServerPlayerEntity player = handler.getPlayer();
+            // if you persist manually, save here
+            PlayerManaManager.removePlayer(player);
+        });
+        ServerTickEvents.END_SERVER_TICK.register(ManaRegenManager::tick);
 	}
 }

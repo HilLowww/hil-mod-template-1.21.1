@@ -1,7 +1,7 @@
 package net.hil.hilmod.mixin;
 
 import com.mojang.authlib.GameProfile;
-import net.hil.hilmod.item.ModItems;
+import net.hil.hilmod.basics.item.ModItems;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;

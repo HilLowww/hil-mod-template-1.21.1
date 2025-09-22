@@ -2,10 +2,9 @@ package net.hil.hilmod.util;
 
 import net.hil.hilmod.HilMod;
 import net.hil.hilmod.component.ModDataComponentTypes;
-import net.hil.hilmod.item.ModItems;
+import net.hil.hilmod.basics.item.ModItems;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 
 public class ModModelPredicates {

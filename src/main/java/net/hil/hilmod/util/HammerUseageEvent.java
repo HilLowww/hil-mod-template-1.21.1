@@ -1,7 +1,7 @@
 package net.hil.hilmod.util;
 
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
-import net.hil.hilmod.item.custom.HammerItem;
+import net.hil.hilmod.basics.item.custom.HammerItem;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;

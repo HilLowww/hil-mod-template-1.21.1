@@ -1,7 +1,7 @@
 package net.hil.hilmod;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.hil.hilmod.item.ModItems;
+import net.hil.hilmod.basics.item.ModItems;
 
 public class ModFuels {
     public static void registerModFuels() {;
