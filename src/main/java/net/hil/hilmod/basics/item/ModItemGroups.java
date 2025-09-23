@@ -47,6 +47,7 @@ public class ModItemGroups {
 
                         //MAGIC
                         entries.add(ModItems.MAGIC_STICK);
+                        entries.add(ModItems.SPELL_BOOK);
                     }).build());
 
     public static final ItemGroup CRYSTELITE_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

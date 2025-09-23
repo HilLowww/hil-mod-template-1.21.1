@@ -1,17 +1,28 @@
 package net.hil.hilmod.component;
 
+import com.mojang.serialization.Codec;
 import net.hil.hilmod.HilMod;
 import net.minecraft.component.ComponentType;
+import net.minecraft.network.codec.PacketCodec;
+import net.minecraft.network.codec.PacketCodecs;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.UnaryOperator;
 
 public class ModDataComponentTypes {
     public static final ComponentType<BlockPos> COORDINATES =
             register("coordinates", blockPosBuilder -> blockPosBuilder.codec(BlockPos.CODEC));
+    public static final ComponentType<List<String>> SPELLS =
+            register("spells", builder -> builder
+                    .codec(Codec.list(Codec.STRING))
+                    .packetCodec(PacketCodecs.collection(ArrayList::new, PacketCodecs.STRING))
+                    .cache()
+            );
 
 
     private static <T>ComponentType<T> register(String name, UnaryOperator<ComponentType.Builder<T>> builderUnaryOperator) {

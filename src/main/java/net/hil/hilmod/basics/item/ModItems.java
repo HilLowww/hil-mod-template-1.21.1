@@ -9,6 +9,7 @@ import net.hil.hilmod.basics.item.custom.HammerItem;
 import net.hil.hilmod.basics.item.custom.ModArmorItem;
 import net.hil.hilmod.basics.item.custom.SimpleMagicItem;
 import net.hil.hilmod.basics.sound.ModSounds;
+import net.hil.hilmod.magic.spellStuf.SpellItems.grimoire;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -95,6 +96,9 @@ public class ModItems {
 
     public static final Item MAGIC_STICK = registerItem("magic_stick",
             new SimpleMagicItem(new Item.Settings().maxCount(1), 20));
+
+    public static final Item SPELL_BOOK = registerItem("spell_book",
+            new grimoire(new Item.Settings(), 2));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(HilMod.MOD_ID, name), item);

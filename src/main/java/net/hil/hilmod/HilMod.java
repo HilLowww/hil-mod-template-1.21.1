@@ -12,6 +12,7 @@ import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.hil.hilmod.basics.block.ModBlocks;
+import net.hil.hilmod.basics.command.BookCommand;
 import net.hil.hilmod.component.ModDataComponentTypes;
 import net.hil.hilmod.basics.effect.ModEffects;
 import net.hil.hilmod.basics.enchantment.ModEnchantmentsEffects;
@@ -22,6 +23,9 @@ import net.hil.hilmod.basics.item.ModItems;
 import net.hil.hilmod.basics.potion.ModPotions;
 import net.hil.hilmod.magic.mana.ManaRegenManager;
 import net.hil.hilmod.magic.mana.PlayerManaManager;
+import net.hil.hilmod.magic.spellStuf.ModSpells;
+import net.hil.hilmod.magic.spellStuf.setup.SpellRegistry;
+import net.hil.hilmod.magic.spellStuf.spells.FireBallSpell;
 import net.hil.hilmod.util.HammerUseageEvent;
 import net.hil.hilmod.world.gen.ModWorldGeneration;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -32,6 +36,7 @@ import net.minecraft.potion.Potions;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 // LLLLLLL
@@ -107,5 +112,7 @@ public class HilMod implements ModInitializer {
             PlayerManaManager.removePlayer(player);
         });
         ServerTickEvents.END_SERVER_TICK.register(ManaRegenManager::tick);
+        BookCommand.register();
+        ModSpells.registerModSpells();
 	}
 }
