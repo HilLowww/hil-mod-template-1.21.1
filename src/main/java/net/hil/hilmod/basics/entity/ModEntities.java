@@ -2,6 +2,7 @@ package net.hil.hilmod.basics.entity;
 
 import net.hil.hilmod.HilMod;
 import net.hil.hilmod.basics.entity.custom.MantisEntity;
+import net.hil.hilmod.basics.entity.custom.TomahawkProjectileEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
@@ -13,6 +14,11 @@ public class ModEntities {
             Identifier.of(HilMod.MOD_ID, "mantis"),
             EntityType.Builder.create(MantisEntity::new, SpawnGroup.CREATURE)
                     .dimensions(1f,2.5f).build());
+
+    public static final EntityType<TomahawkProjectileEntity> TOMAHAWK = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(HilMod.MOD_ID, "tomahawk"),
+            EntityType.Builder.<TomahawkProjectileEntity>create(TomahawkProjectileEntity::new, SpawnGroup.MISC)
+                    .dimensions(0.5f, 1.15f).build());
 
 
 

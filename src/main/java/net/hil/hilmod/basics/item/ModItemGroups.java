@@ -45,6 +45,8 @@ public class ModItemGroups {
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
                         entries.add(ModItems.BLUE_BERRIES);
 
+                        entries.add(ModItems.TOMAHAWK);
+
                         //MAGIC
                         entries.add(ModItems.MAGIC_STICK);
                         entries.add(ModItems.SPELL_BOOK);

@@ -9,6 +9,8 @@ import net.hil.hilmod.basics.block.ModBlocks;
 import net.hil.hilmod.basics.entity.ModEntities;
 import net.hil.hilmod.basics.entity.client.MantisModel;
 import net.hil.hilmod.basics.entity.client.MantisRenderer;
+import net.hil.hilmod.basics.entity.client.TomahawkProjectileModel;
+import net.hil.hilmod.basics.entity.client.TomahawkProjectileRenderer;
 import net.hil.hilmod.magic.mana.ModMana;
 import net.hil.hilmod.magic.mana.PlayerManaManager;
 import net.hil.hilmod.util.ModModelPredicates;
@@ -34,6 +36,8 @@ public class HilModClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(MantisModel.MANTIS, MantisModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.MANTIS, MantisRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(TomahawkProjectileModel.TOMAHAWK, TomahawkProjectileModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.TOMAHAWK, TomahawkProjectileRenderer::new);
 
         HudRenderCallback.EVENT.register((matrices, tickDelta) -> drawManaBar(matrices));
     }

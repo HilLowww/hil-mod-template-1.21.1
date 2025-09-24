@@ -18,6 +18,8 @@
   "item.hilmod.crystalite_hoe": "Crystalite Hoe",
   "item.hilmod.crystalised_bow": "Crystalised Bow",
 
+  "item.hilmod.tomahawk": "Tomahawk",
+
   "item.hilmod.crystalite_hammer": "Crystalite Hammer",
 
   "item.hilmod.crystalite_helmet": "Crystalite Helmet",
@@ -91,5 +93,6 @@
   "block.hilmod.cauliflower_crop": "Cauliflower Crop",
   "block.hilmod.blue_berry_bush": "Blue Berry Bush",
 
-  "entity.hilmod.mantis": "Mantis"
+  "entity.hilmod.mantis": "Mantis",
+  "entity.hilmod.tomahawk": "Tomahawk"
 }

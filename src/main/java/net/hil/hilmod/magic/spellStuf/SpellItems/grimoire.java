@@ -100,13 +100,13 @@ public class grimoire extends Item {
         // Check player mana
         // Server-side code (effects, damage, entity spawning)
         if (player instanceof ServerPlayerEntity serverPlayer) {
-            if (PlayerManaManager.getMana((ServerPlayerEntity) player).getCurrentMana() < spell.getManaCost()) {
+            if (PlayerManaManager.getMana(serverPlayer).getCurrentMana() < spell.getManaCost()) {
                 player.sendMessage(Text.literal("Not enough mana!"), false);
                 return;
             }
 
 
-            PlayerManaManager.getMana((ServerPlayerEntity) player).useMana(spell.getManaCost(), (ServerPlayerEntity) player);
+            PlayerManaManager.getMana(serverPlayer).useMana(spell.getManaCost(), serverPlayer);
             spell.cast(world, player);        }
     }
 }
