@@ -1,6 +1,7 @@
 package net.hil.hilmod.basics.entity;
 
 import net.hil.hilmod.HilMod;
+import net.hil.hilmod.basics.entity.custom.ChairEntity;
 import net.hil.hilmod.basics.entity.custom.MantisEntity;
 import net.hil.hilmod.basics.entity.custom.TomahawkProjectileEntity;
 import net.minecraft.entity.EntityType;
@@ -19,6 +20,11 @@ public class ModEntities {
             Identifier.of(HilMod.MOD_ID, "tomahawk"),
             EntityType.Builder.<TomahawkProjectileEntity>create(TomahawkProjectileEntity::new, SpawnGroup.MISC)
                     .dimensions(0.5f, 1.15f).build());
+
+    public static final EntityType<ChairEntity> CHAIR = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(HilMod.MOD_ID, "chair_entity"),
+            EntityType.Builder.create(ChairEntity::new, SpawnGroup.MISC)
+                    .dimensions(0.5f, 0.5f).build());
 
 
 
