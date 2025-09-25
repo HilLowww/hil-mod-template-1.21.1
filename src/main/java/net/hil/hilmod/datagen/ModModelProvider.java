@@ -70,6 +70,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC, Models.GENERATED);
         //itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDER_ROD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPELL_BOOK, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CRYSTALITE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CRYSTALITE_PICKAXE, Models.HANDHELD);

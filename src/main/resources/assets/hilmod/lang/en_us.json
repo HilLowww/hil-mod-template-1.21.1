@@ -96,5 +96,9 @@
   "block.hilmod.blue_berry_bush": "Blue Berry Bush",
 
   "entity.hilmod.mantis": "Mantis",
-  "entity.hilmod.tomahawk": "Tomahawk"
+  "entity.hilmod.tomahawk": "Tomahawk",
+
+
+
+  "item.hilmod.spell_book": "Grimoire"
 }
