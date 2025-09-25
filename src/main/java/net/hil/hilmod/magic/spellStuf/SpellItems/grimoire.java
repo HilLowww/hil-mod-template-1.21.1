@@ -107,6 +107,6 @@ public class grimoire extends Item {
 
 
             PlayerManaManager.getMana(serverPlayer).useMana(spell.getManaCost(), serverPlayer);
-            spell.cast(world, player);        }
+            spell.cast(world, player);}
     }
 }

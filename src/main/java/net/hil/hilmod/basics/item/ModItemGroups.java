@@ -49,6 +49,7 @@ public class ModItemGroups {
 
                         //MAGIC
                         entries.add(ModItems.MAGIC_STICK);
+                        entries.add(ModItems.SPECTRE_STAFF);
                         entries.add(ModItems.SPELL_BOOK);
                     }).build());
 

@@ -6,7 +6,10 @@ import net.hil.hilmod.basics.block.ModBlocks;
 import net.hil.hilmod.basics.entity.ModEntities;
 import net.hil.hilmod.basics.item.custom.*;
 import net.hil.hilmod.basics.sound.ModSounds;
+import net.hil.hilmod.magic.spellStuf.ModSpells;
+import net.hil.hilmod.magic.spellStuf.SpellItems.Staff;
 import net.hil.hilmod.magic.spellStuf.SpellItems.grimoire;
+import net.hil.hilmod.magic.spellStuf.setup.SpellRegistry;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -99,6 +102,9 @@ public class ModItems {
 
     public static final Item TOMAHAWK = registerItem("tomahawk",
             new TomahawkItem(new Item.Settings().maxCount(16)));
+
+    public static final Item SPECTRE_STAFF = registerItem("spectre_staff",
+            new Staff(new Item.Settings().maxCount(1), "hilmod:heal_self"));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(HilMod.MOD_ID, name), item);
