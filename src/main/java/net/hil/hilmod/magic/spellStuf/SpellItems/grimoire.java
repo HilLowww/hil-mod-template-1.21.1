@@ -13,6 +13,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
+import net.minecraft.world.GameMode;
 import net.minecraft.world.World;
 
 import java.util.ArrayList;
@@ -104,9 +105,8 @@ public class grimoire extends Item {
                 player.sendMessage(Text.literal("Not enough mana!"), false);
                 return;
             }
-
-
             PlayerManaManager.getMana(serverPlayer).useMana(spell.getManaCost(), serverPlayer);
+
             spell.cast(world, player);}
     }
 }

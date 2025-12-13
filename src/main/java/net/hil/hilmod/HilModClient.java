@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.hil.hilmod.basics.block.ModBlocks;
 import net.hil.hilmod.basics.entity.ModEntities;
 import net.hil.hilmod.basics.entity.client.*;
+import net.hil.hilmod.hud.ManaUi;
 import net.hil.hilmod.magic.mana.ModMana;
 import net.hil.hilmod.magic.mana.PlayerManaManager;
 import net.hil.hilmod.util.ModModelPredicates;
@@ -37,37 +38,8 @@ public class HilModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.TOMAHAWK, TomahawkProjectileRenderer::new);
         EntityRendererRegistry.register(ModEntities.CHAIR , ChairRenderer::new);
 
-        HudRenderCallback.EVENT.register((matrices, tickDelta) -> drawManaBar(matrices));
+        ManaUi.init();
     }
 
-    private void drawManaBar(DrawContext context) {
-        MinecraftClient client = MinecraftClient.getInstance();
-        if (client.player == null) return;
 
-        // Get mana by UUID (make sure PlayerManaManager.getMana(UUID) exists)
-        UUID uuid = client.player.getUuid();
-        ModMana mana = PlayerManaManager.getMana(uuid);
-        if (mana == null) return; // may need sync from server in multiplayer
-
-        int barWidth = 80;
-        int barHeight = 8;
-        int x = 10;
-        int y = client.getWindow().getScaledHeight() - 50;
-
-        int filled = 0;
-        if (mana.getMaxMana() > 0) {
-            filled = (int) ((long) mana.getCurrentMana() * barWidth / mana.getMaxMana());
-        }
-
-        // background (dark gray, ARGB)
-        context.fill(x, y, x + barWidth, y + barHeight, 0xFF333333);
-        // filled (blue)
-        context.fill(x, y, x + filled, y + barHeight, 0xFF0000FF);
-
-        // text above the bar
-        String text = mana.getCurrentMana() + " / " + mana.getMaxMana();
-        int textWidth = client.textRenderer.getWidth(text);
-        int textX = x + (barWidth - textWidth) / 2;
-        context.drawText(client.textRenderer, Text.literal(text), textX, y - 10, 0xFFFFFF, false);
-    }
 }

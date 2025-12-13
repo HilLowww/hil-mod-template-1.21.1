@@ -26,6 +26,7 @@ import net.hil.hilmod.magic.mana.PlayerManaManager;
 import net.hil.hilmod.magic.spellStuf.ModSpells;
 import net.hil.hilmod.magic.spellStuf.setup.SpellRegistry;
 import net.hil.hilmod.magic.spellStuf.spells.FireBallSpell;
+import net.hil.hilmod.util.ArmorEffectHelper;
 import net.hil.hilmod.util.HammerUseageEvent;
 import net.hil.hilmod.world.gen.ModWorldGeneration;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -96,7 +97,7 @@ public class HilMod implements ModInitializer {
 
         FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
 
-
+        ArmorEffectHelper.registerCustomArmorEffects();
 
 //MAGIC SECTION
         ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {

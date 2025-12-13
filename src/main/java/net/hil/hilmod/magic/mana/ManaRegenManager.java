@@ -8,7 +8,32 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ManaRegenManager {
+    private static final Map<UUID, Map<String, Float>> regenSources = new HashMap<>();
     private static final Map<UUID, Integer> regenDelays = new HashMap<>();
+
+    public static void setRegenSource(ServerPlayerEntity player, String id, float multiplier) {
+        UUID uuid = player.getUuid();
+        regenSources.computeIfAbsent(uuid, k -> new HashMap<>()).put(id, multiplier);
+    }
+
+    public static void removeRegenSource(ServerPlayerEntity player, String id) {
+        Map<String, Float> sources = regenSources.get(player.getUuid());
+        if (sources != null) {
+            sources.remove(id);
+            if (sources.isEmpty()) regenSources.remove(player.getUuid());
+        }
+    }
+
+    public static float getTotalRegenMultiplier(ServerPlayerEntity player) {
+        Map<String, Float> sources = regenSources.get(player.getUuid());
+        if (sources == null || sources.isEmpty()) return 1.0f;
+
+        float total = 1.0f;
+        for (float mult : sources.values()) {
+            total *= mult; // Multiply all sources together
+        }
+        return total;
+    }
 
     // Called every server tick (20 times per second)
     public static void tick(MinecraftServer server) {
@@ -23,7 +48,9 @@ public class ManaRegenManager {
                 if (delay > 0) {
                     regenDelays.put(id, delay - 1);
                 } else {
-                    mana.addMana(1); // regen 1 per tick (customize this)
+                    float totalMult = getTotalRegenMultiplier(player);
+                    int regenAmount = Math.round(1 * totalMult);
+                    mana.addMana(regenAmount);
                 }
             }
         }

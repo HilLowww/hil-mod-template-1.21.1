@@ -1,6 +1,7 @@
 package net.hil.hilmod.magic.mana;
 
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.world.GameMode;
 
 public class ModMana {
     private int maxMana;
@@ -26,9 +27,12 @@ public class ModMana {
     public void addMana(int amount) { setCurrentMana(currentMana + amount); }
 
     public void useMana(int amount, ServerPlayerEntity player) {
-        if (currentMana >= amount) {
-            currentMana -= amount;
-            ManaRegenManager.resetRegenDelay(player);
+        GameMode mode = player.interactionManager.getGameMode();
+        if (mode == GameMode.SURVIVAL) {
+            if (currentMana >= amount) {
+                currentMana -= amount;
+                ManaRegenManager.resetRegenDelay(player);
+            }
         }
     }
 }
